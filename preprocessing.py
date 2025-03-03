@@ -23,8 +23,6 @@ def get_device():
     return device
 
 
-# main dataset url: https://www.kaggle.com/datasets/dansbecker/food-101
-
 def data_grabber(device, path):
     if 'http' in path:
         website = path
@@ -32,9 +30,23 @@ def data_grabber(device, path):
         do_stuff = path
 
 
-def display_image(image, w, h):
+def image_scaling(images):  # TODO
+    '''scale the images to a constant width and height'''
+    pass
+
+def label_conversion(input) -> list:  # TODO
+    '''
+    one hot encoding of the ingredients and their calories
+    e.g. if the ingredients in data are [apple, banana, cucumber, egg], 
+    then the label [0, 50, 20, 0] means there's 50 kcal worth of bananas, and 20 kcal of cucumbers
+    R_type: nested list
+    '''
+    pass
+
+def display_image(image, w, h):  # debugging
     plt.imshow(image.reshape(w, h))
 
 
 if __name__ == "__main__":
-    device = get_device()
+    # device = get_device()
+    pass
