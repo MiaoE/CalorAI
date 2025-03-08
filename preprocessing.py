@@ -109,6 +109,6 @@ if __name__ == "__main__":
     # image_scaling(inpt)
     # out = label_conversion(['Strawberries', 'Onion', 'Egg'], [45.9, 76, 39.45])
     # print(out)
-    im = convert_image('images_resized/v127.png')
-    display_image(im, 400, 400)
+    # im = convert_image('images_resized/v127.png')
+    # display_image(im, 400, 400)
     pass
