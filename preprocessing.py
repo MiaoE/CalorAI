@@ -2,6 +2,8 @@
 
 import matplotlib.pyplot as plt
 import matplotlib as mpl
+import numpy as np
+import cv2
 
 #import collections
 #import kaggle
@@ -51,31 +53,13 @@ def image_scaling(input_folder, target_size = (400,400)):  # TODO
 
     print("All images resized and saved to {output_folder}")
 
-def label_conversion(ingredient_list:list, calorie_list:list, file_name='ingredients_sorted.json') -> list:  # TODO
-    '''
-    one hot encoding of the ingredients and their calories
-    e.g. if the ingredients in data are [apple, banana, cucumber, egg], 
-    then the label [0, 50, 20, 0] means there's 50 kcal worth of bananas, and 20 kcal of cucumbers
-    R_type: nested list
-    '''
-    # checks if cached all ordered ingredients exists
-    folder = os.path.exists('./cache/')
-    file_exists = False
-    path = './cache/' + file_name
-    if not folder: 
-        os.mkdir('cache')
-        # print('make folder')
-    else:
-        # print('folder exists')
-        file_exists = os.path.exists(path)
 
-    all_ingredients = []
-    if file_exists:
-        # print('file exists')
-        with open(path, mode='r', encoding='utf-8') as json_file:
-            all_ingredients = json.load(json_file)
-    else:
-        # print('making file')
+def create_unique_ingredient_list(file_name='ingredients_sorted.json'):
+    # checks if cached all ordered ingredients exists
+    path = './cache/' + file_name
+    if not os.path.exists('./cache/'): 
+        os.mkdir('cache')
+    if not os.path.exists(path):
         ingredients = set()
         with open('data.json', mode='r', encoding='utf-8') as data_file:
             data = json.load(data_file)
@@ -85,9 +69,15 @@ def label_conversion(ingredient_list:list, calorie_list:list, file_name='ingredi
         ingredients.sort()
         with open(path, mode='w', encoding='utf-8') as json_file:
             json.dump(ingredients, json_file)
-        all_ingredients = ingredients
     # print(all_ingredients)
 
+def label_conversion(ingredient_list:list, calorie_list:list, all_ingredients) -> list:  # TODO
+    '''
+    one hot encoding of the ingredients and their calories
+    e.g. if the ingredients in data are [apple, banana, cucumber, egg], 
+    then the label [0, 50, 20, 0] means there's 50 kcal worth of bananas, and 20 kcal of cucumbers
+    R_type: nested list
+    '''
     # convert given ingredient and calorie list to one-hot encoded list
     one_hot_calories = [0] * len(all_ingredients)
     assert(len(ingredient_list) == len(calorie_list))
@@ -96,12 +86,29 @@ def label_conversion(ingredient_list:list, calorie_list:list, file_name='ingredi
         one_hot_calories[idx] = calorie
     return one_hot_calories
 
+def convert_image(image_path):
+    """
+    Converts image given a file to a 2D list
+    NOTE: CV2 imread converts the image to BGR
+    """
+    image = cv2.imread(image_path)
+    image_rgb = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)  # converts BGR to RGB
+    return image_rgb
+
 def display_image(image, w, h):  # debugging
-    plt.imshow(image.reshape(w, h))
+    plt.imshow(image.reshape(w, h, 3))
+    plt.show()
+    # to display BGR image converted by CV2, use the following code
+    # cv2.imshow('image', image)
+    # cv2.waitKey(0)
+    # cv2.destroyAllWindows()
 
 
 if __name__ == "__main__":
-    inpt = "" #! Add path to images folder here to resize all images inside 
-    image_scaling(inpt)
+    # inpt = "" #! Add path to images folder here to resize all images inside 
+    # image_scaling(inpt)
     # out = label_conversion(['Strawberries', 'Onion', 'Egg'], [45.9, 76, 39.45])
     # print(out)
+    im = convert_image('images_resized/v127.png')
+    display_image(im, 400, 400)
+    pass
