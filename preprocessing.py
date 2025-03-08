@@ -11,21 +11,6 @@ from PIL import Image, ImageOps
 import os
 import json
 
-def get_device():
-    print(torch.__version__)
-    cuda = torch.cuda.is_available()
-    device = torch.device("cuda" if cuda else "cpu")
-    print(f"Using device: {device}")
-    return device
-
-
-def data_grabber(device, path):
-    if 'http' in path:
-        website = path
-    else:
-        do_stuff = path
-
-
 def image_scaling(input_folder, target_size = (400,400)):  # TODO
     """
     Scale image data to a constant width and height (400px by 400px).
