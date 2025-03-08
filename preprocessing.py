@@ -1,14 +1,5 @@
 #!pip install kaggle
 
-import torch
-import torch.nn as nn
-import torchvision
-import torch.utils.data as torch_data
-import torch.nn.functional as F
-import torchmetrics
-
-import numpy as np
-
 import matplotlib.pyplot as plt
 import matplotlib as mpl
 
@@ -18,6 +9,7 @@ import matplotlib as mpl
 #Image processing inputs 
 from PIL import Image, ImageOps
 import os
+import json
 
 def get_device():
     print(torch.__version__)
@@ -74,14 +66,50 @@ def image_scaling(input_folder, target_size = (400,400)):  # TODO
 
     print("All images resized and saved to {output_folder}")
 
-def label_conversion(input) -> list:  # TODO
+def label_conversion(ingredient_list:list, calorie_list:list, file_name='ingredients_sorted.json') -> list:  # TODO
     '''
     one hot encoding of the ingredients and their calories
     e.g. if the ingredients in data are [apple, banana, cucumber, egg], 
     then the label [0, 50, 20, 0] means there's 50 kcal worth of bananas, and 20 kcal of cucumbers
     R_type: nested list
     '''
-    pass
+    # checks if cached all ordered ingredients exists
+    folder = os.path.exists('./cache/')
+    file_exists = False
+    path = './cache/' + file_name
+    if not folder: 
+        os.mkdir('cache')
+        # print('make folder')
+    else:
+        # print('folder exists')
+        file_exists = os.path.exists(path)
+
+    all_ingredients = []
+    if file_exists:
+        # print('file exists')
+        with open(path, mode='r', encoding='utf-8') as json_file:
+            all_ingredients = json.load(json_file)
+    else:
+        # print('making file')
+        ingredients = set()
+        with open('data.json', mode='r', encoding='utf-8') as data_file:
+            data = json.load(data_file)
+        for image in data:
+            ingredients.update(image['food type'])
+        ingredients = list(ingredients)
+        ingredients.sort()
+        with open(path, mode='w', encoding='utf-8') as json_file:
+            json.dump(ingredients, json_file)
+        all_ingredients = ingredients
+    # print(all_ingredients)
+
+    # convert given ingredient and calorie list to one-hot encoded list
+    one_hot_calories = [0] * len(all_ingredients)
+    assert(len(ingredient_list) == len(calorie_list))
+    for ingredient, calorie in zip(ingredient_list, calorie_list):
+        idx = all_ingredients.index(ingredient)
+        one_hot_calories[idx] = calorie
+    return one_hot_calories
 
 def display_image(image, w, h):  # debugging
     plt.imshow(image.reshape(w, h))
@@ -90,3 +118,5 @@ def display_image(image, w, h):  # debugging
 if __name__ == "__main__":
     inpt = "" #! Add path to images folder here to resize all images inside 
     image_scaling(inpt)
+    # out = label_conversion(['Strawberries', 'Onion', 'Egg'], [45.9, 76, 39.45])
+    # print(out)
