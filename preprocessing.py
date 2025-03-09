@@ -96,7 +96,7 @@ def convert_image(image_path):
     NOTE: CV2 imread converts the image to BGR
     """
     img = torchvision.io.read_image(image_path)
-    print(img)
+    # print(img)
     return img
 
 
