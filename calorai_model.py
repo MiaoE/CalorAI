@@ -14,6 +14,10 @@ import matplotlib as mpl
 import collections
 import kaggle
 
+from preprocessing import convert_image, label_conversion, get_unique_ingredient_list
+
+import json
+
 def get_device():
     print(torch.__version__)
     cuda = torch.cuda.is_available()
@@ -23,61 +27,73 @@ def get_device():
 
 
 class Model(nn.Module):
-    def __init__(self):
+    def __init__(self, out_dim):
         super(Model, self).__init__()
-        self.cnn_layer = nn.Sequential(nn.Conv2d(3, 30, kernel_size=4, stride=2, padding=1), nn.Conv2d(30, 64, kernel_size=4, stride=2, padding=1), nn.ReLU(), nn.Flatten())
-        self.mlp_layer = nn.Sequential(nn.Linear(7 * 7 * 64, 63), nn.Sigmoid(), nn.Linear(63, 128), nn.ReLU(), nn.Linear(128, 64), nn.Linear(64, 32), nn.ReLU())
+        print(out_dim)
+        # [3,400,400] -> [6,195,195] -> [12, 37, 37]
+        self.cnn_layer = nn.Sequential(nn.Conv2d(3, 6, kernel_size=10, stride=2), nn.Conv2d(6, 12, kernel_size=10, stride=5), nn.ReLU(), nn.Flatten())
+        self.mlp_layer = nn.Sequential(nn.Linear(37 * 37 * 12, out_dim * 4), nn.Sigmoid(), nn.Linear(out_dim * 4, out_dim * 2), nn.ReLU(), nn.Linear(out_dim * 2, out_dim))
+
+    def forward(self, x):
+        h = self.cnn_layer(x)
+        return self.mlp_layer(h)
 
 
-def plot_result(x, y):
-    print('hi')
-    pass
+class ResNet50:
+    def __init__(self):
+        pass
+
+def get_data_list(data_path, image_dir):
+    """ 
+    image_dir must have / at the end of the string
+    returns a tuple of (list of training images tensors, list of labels which in itself is a list)
+    """
+    all_ingredients = get_unique_ingredient_list()
+    with open(data_path, 'r', encoding='utf-8') as training_file:
+        training_data = json.load(training_file)
+    training_image_tensor = []
+    labels = []
+    for image in training_data:
+        training_image_tensor.append(convert_image(image_dir + image['name'] + '.png'))
+        labels.append(label_conversion(image['food type'], image['calorie'], all_ingredients))
+    return training_image_tensor, labels
 
 
 class CalorAI():
-    def __init__(self, learning_rate=0.01):
-        self.model = Model()
-        self.loss_fcn = nn.BCELoss()
-        self.optimizer = optim.Adam(model.parameters(), lr=learning_rate)
+    def __init__(self):
+        self.device = get_device()
+        self.init_custom_model()
 
-    def train(self, epoch=10):
-        self.model.train()
-        training_loss = 0
+    def init_custom_model(self, learning_rate=0.01):
+        self.training_data, self.training_label = get_data_list('train.json', 'images_resized/')
+        self.val_data, self.val_label = get_data_list('val.json', 'images_resized/')
+        self.test_data, self.test_label = get_data_list('test.json', 'images_resized/')
+        length_all_ingredients = len(self.training_data[1][0])
+        self.model = Model(length_all_ingredients)
+        self.loss_fcn = nn.BCELoss()
+        self.optimizer = optim.Adam(self.model.parameters(), lr=learning_rate)
+
+    def resnet(self):
+        self.model = ResNet50()
+
+    def train(self, epochs=10):
+        for epoch in range(1, epochs+1):
+            self.model.train()
+            training_loss = 0
+            for img, label in zip(self.training_data, self.training_label):
+                img, label = img.to(self.device), label.to(self.device)
+                self.optimizer.zero_grad()
+                prediction = self.model.forward(img)
+                loss = self.loss_fcn(prediction, label)
+                loss.backward()
+                training_loss += loss.item()
+                self.optimizer.step()
+            print("Epoch {} Average Loss: {:.4f}".format(epoch, training_loss / len(self.training_label)))
+
+            
 
 if __name__ == '__main__':
-    model = Model()
-    learning_rate = 0.01
-    optimizer = optim.Adam(model.parameters(), lr=learning_rate)
-    criterion = nn.BCELoss()
-    results = []
-    # Training loop (fixed epochs = 10)
-    pbar = tqdm.tqdm(range(1, 11))
-    for epoch in pbar:
-        model.train()
-        train_loss = 0
-        correct_predictions = 0
-        total_samples = 0
-        for batch_idx, (data, target) in enumerate(train_loader):
-            data, target = data.to(device), target.to(device)
-            optimizer.zero_grad()
-            output = model(data)
-            loss = criterion(output, target)
-            loss.backward()
-            optimizer.step()
+    device = get_device()
+    model = CalorAI()
 
-            train_loss += loss.item()
-            _, predicted = torch.max(output.data, 1)
-            total_samples += target.size(0)
-            correct_predictions += (predicted == target).sum().item()
-
-        train_accuracy = 100.0 * correct_predictions / total_samples
-        info = {'loss': train_loss / len(train_loader), 'accuracy': train_accuracy}
-        pbar.set_postfix(info)
-        results.append(info)
-
-    train_df = pd.DataFrame(results)
-    ipy_display.display(train_df)
-
-    test_acc, n_params = evaluate(model)
-    print(f"Final Test Accuracy after 10 Epochs: {test_acc:.2f}%")
-    print(f"Number of trainable parameters: {n_params}")
+    model.train()

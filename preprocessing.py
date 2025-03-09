@@ -58,7 +58,7 @@ def image_scaling(input_folder, target_size = (400,400)):  # TODO
     print("All images resized and saved to {output_folder}")
 
 
-def create_unique_ingredient_list(file_name='ingredients_sorted.json'):
+def get_unique_ingredient_list(file_name='ingredients_sorted.json'):
     # checks if cached all ordered ingredients exists
     path = './cache/' + file_name
     if not os.path.exists('./cache/'): 
@@ -73,7 +73,10 @@ def create_unique_ingredient_list(file_name='ingredients_sorted.json'):
         ingredients.sort()
         with open(path, mode='w', encoding='utf-8') as json_file:
             json.dump(ingredients, json_file)
+    with open(path, 'r', encoding='utf-8') as ingredient_file:
+        all_ingredients = json.load(ingredient_file)
     # print(all_ingredients)
+    return all_ingredients
 
 def label_conversion(ingredient_list:list, calorie_list:list, all_ingredients) -> list:  # TODO
     '''
@@ -87,8 +90,10 @@ def label_conversion(ingredient_list:list, calorie_list:list, all_ingredients) -
     assert(len(ingredient_list) == len(calorie_list))
     for ingredient, calorie in zip(ingredient_list, calorie_list):
         idx = all_ingredients.index(ingredient)
+        print(type(calorie))
+        print(calorie)
         one_hot_calories[idx] = calorie
-    return one_hot_calories
+    return torch.tensor(one_hot_calories)
 
 def convert_image(image_path):
     """
