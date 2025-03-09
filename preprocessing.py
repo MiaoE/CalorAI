@@ -5,6 +5,10 @@ import matplotlib as mpl
 import numpy as np
 import cv2
 
+import torch
+import torchvision
+import torchvision.transforms as transforms
+
 #import collections
 #import kaggle
 
@@ -88,12 +92,15 @@ def label_conversion(ingredient_list:list, calorie_list:list, all_ingredients) -
 
 def convert_image(image_path):
     """
-    Converts image given a file to a 2D list
+    Converts image given a file to a Tensor (C x H x W)
     NOTE: CV2 imread converts the image to BGR
     """
-    image = cv2.imread(image_path)
-    image_rgb = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)  # converts BGR to RGB
-    return image_rgb
+    img = torchvision.io.read_image(image_path)
+    print(img)
+    return img
+
+def prepare_data():
+    pass
 
 def display_image(image, w, h):  # debugging
     plt.imshow(image.reshape(w, h, 3))
@@ -109,6 +116,6 @@ if __name__ == "__main__":
     # image_scaling(inpt)
     # out = label_conversion(['Strawberries', 'Onion', 'Egg'], [45.9, 76, 39.45])
     # print(out)
-    # im = convert_image('images_resized/v127.png')
+    im = convert_image('images_resized/v127.png')
     # display_image(im, 400, 400)
     pass
