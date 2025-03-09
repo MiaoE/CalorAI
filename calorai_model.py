@@ -103,7 +103,6 @@ class CalorAI():
             
 
 if __name__ == '__main__':
-    device = get_device()
     model = CalorAI()
 
     model.train()
