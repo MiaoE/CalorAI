@@ -90,8 +90,8 @@ def label_conversion(ingredient_list:list, calorie_list:list, all_ingredients) -
     assert(len(ingredient_list) == len(calorie_list))
     for ingredient, calorie in zip(ingredient_list, calorie_list):
         idx = all_ingredients.index(ingredient)
-        print(type(calorie))
-        print(calorie)
+        # print(type(calorie))
+        # print(calorie)
         one_hot_calories[idx] = calorie
     return torch.tensor(one_hot_calories)
 
@@ -100,9 +100,11 @@ def convert_image(image_path):
     Converts image given a file to a Tensor (C x H x W)
     NOTE: CV2 imread converts the image to BGR
     """
-    img = torchvision.io.read_image(image_path)
+    img = Image.open(image_path)
+    transform = transforms.Compose([transforms.ToTensor()])
+    img_tensor = transform(img)
     # print(img)
-    return img
+    return img_tensor
 
 
 def display_image(image, w, h):  # debugging

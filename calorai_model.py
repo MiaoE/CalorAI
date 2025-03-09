@@ -5,6 +5,7 @@ import torch.utils.data as torch_data
 import torch.optim as optim
 import torch.nn.functional as F
 import torchmetrics
+import torchinfo
 
 import numpy as np
 
@@ -29,13 +30,14 @@ def get_device():
 class Model(nn.Module):
     def __init__(self, out_dim):
         super(Model, self).__init__()
-        print(out_dim)
-        # [3,400,400] -> [6,195,195] -> [12, 37, 37]
-        self.cnn_layer = nn.Sequential(nn.Conv2d(3, 6, kernel_size=10, stride=2), nn.Conv2d(6, 12, kernel_size=10, stride=5), nn.ReLU(), nn.Flatten())
-        self.mlp_layer = nn.Sequential(nn.Linear(37 * 37 * 12, out_dim * 4), nn.Sigmoid(), nn.Linear(out_dim * 4, out_dim * 2), nn.ReLU(), nn.Linear(out_dim * 2, out_dim))
+        # print(out_dim)
+        # [3,400,400] -> [6,196,196] -> [12,38,38]
+        self.cnn_layer = nn.Sequential(nn.Conv2d(3, 6, kernel_size=10, stride=2), nn.Conv2d(6, 12, kernel_size=10, stride=5), nn.ReLU())
+        self.mlp_layer = nn.Sequential(nn.Linear(38 * 38 * 12, out_dim * 4), nn.Sigmoid(), nn.Linear(out_dim * 4, out_dim * 2), nn.ReLU(), nn.Linear(out_dim * 2, out_dim))
 
     def forward(self, x):
         h = self.cnn_layer(x)
+        h = h.reshape(-1,)
         return self.mlp_layer(h)
 
 
@@ -68,10 +70,15 @@ class CalorAI():
         self.training_data, self.training_label = get_data_list('train.json', 'images_resized/')
         self.val_data, self.val_label = get_data_list('val.json', 'images_resized/')
         self.test_data, self.test_label = get_data_list('test.json', 'images_resized/')
-        length_all_ingredients = len(self.training_data[1][0])
-        self.model = Model(length_all_ingredients)
+        # print(self.val_data)
+        # print(len(self.val_data))
+        # print(len(self.val_data[0]))
+        # print(len(self.val_data[0][0]))
+        length_all_ingredients = len(self.training_label[0])
+        self.model = Model(length_all_ingredients).to(device)
         self.loss_fcn = nn.BCELoss()
         self.optimizer = optim.Adam(self.model.parameters(), lr=learning_rate)
+        torchinfo.summary(self.model, input_size=(len(self.training_data[0]), len(self.training_data[0][0]), len(self.training_data[0][0][0])))
 
     def resnet(self):
         self.model = ResNet50()
@@ -81,9 +88,12 @@ class CalorAI():
             self.model.train()
             training_loss = 0
             for img, label in zip(self.training_data, self.training_label):
+                print(label.shape)
+                print(f"{len(img)}, {len(img[0])}, {len(img[0][0])}")
                 img, label = img.to(self.device), label.to(self.device)
                 self.optimizer.zero_grad()
                 prediction = self.model.forward(img)
+                print(prediction.shape)
                 loss = self.loss_fcn(prediction, label)
                 loss.backward()
                 training_loss += loss.item()
