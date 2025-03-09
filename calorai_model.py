@@ -76,7 +76,7 @@ class CalorAI():
         # print(len(self.val_data[0][0]))
         length_all_ingredients = len(self.training_label[0])
         self.model = Model(length_all_ingredients).to(self.device)
-        self.loss_fcn = nn.BCELoss()
+        self.loss_fcn = nn.MSELoss()
         self.optimizer = optim.Adam(self.model.parameters(), lr=learning_rate)
         torchinfo.summary(self.model, input_size=(len(self.training_data[0]), len(self.training_data[0][0]), len(self.training_data[0][0][0])))
 
