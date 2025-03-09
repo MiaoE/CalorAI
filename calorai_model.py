@@ -33,7 +33,7 @@ class Model(nn.Module):
         # print(out_dim)
         # [3,400,400] -> [6,196,196] -> [12,38,38]
         self.cnn_layer = nn.Sequential(nn.Conv2d(3, 6, kernel_size=10, stride=2), nn.Conv2d(6, 12, kernel_size=10, stride=5), nn.ReLU())
-        self.mlp_layer = nn.Sequential(nn.Linear(38 * 38 * 12, out_dim * 4), nn.Sigmoid(), nn.Linear(out_dim * 4, out_dim * 2), nn.ReLU(), nn.Linear(out_dim * 2, out_dim))
+        self.mlp_layer = nn.Sequential(nn.Linear(38 * 38 * 12, out_dim * 4), nn.Sigmoid(), nn.Linear(out_dim * 4, out_dim * 2), nn.ReLU(), nn.Linear(out_dim * 2, out_dim), nn.ReLU())
 
     def forward(self, x):
         h = self.cnn_layer(x)
@@ -105,4 +105,4 @@ class CalorAI():
 if __name__ == '__main__':
     model = CalorAI()
 
-    model.train()
+    model.train(25)
