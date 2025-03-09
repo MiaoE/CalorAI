@@ -88,12 +88,12 @@ class CalorAI():
             self.model.train()
             training_loss = 0
             for img, label in zip(self.training_data, self.training_label):
-                print(label.shape)
-                print(f"{len(img)}, {len(img[0])}, {len(img[0][0])}")
+                # print(label.shape)
+                # print(f"{len(img)}, {len(img[0])}, {len(img[0][0])}")
                 img, label = img.to(self.device), label.to(self.device)
                 self.optimizer.zero_grad()
                 prediction = self.model.forward(img)
-                print(prediction.shape)
+                # print(prediction.shape)
                 loss = self.loss_fcn(prediction, label)
                 loss.backward()
                 training_loss += loss.item()
