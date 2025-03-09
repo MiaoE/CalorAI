@@ -99,8 +99,6 @@ def convert_image(image_path):
     print(img)
     return img
 
-def prepare_data():
-    pass
 
 def display_image(image, w, h):  # debugging
     plt.imshow(image.reshape(w, h, 3))
@@ -116,6 +114,6 @@ if __name__ == "__main__":
     # image_scaling(inpt)
     # out = label_conversion(['Strawberries', 'Onion', 'Egg'], [45.9, 76, 39.45])
     # print(out)
-    im = convert_image('images_resized/v127.png')
+    # im = convert_image('images_resized/v127.png')
     # display_image(im, 400, 400)
     pass
