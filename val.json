@@ -288,7 +288,7 @@
             "41"
         ],
         "calorie": [
-            "Calorie data for Bread not found.",
+            174.0,
             56.0,
             28.24
         ]
@@ -314,7 +314,7 @@
             "80"
         ],
         "calorie": [
-            "Calorie data for Bread not found.",
+            174.0,
             56.0,
             28.24,
             11.61,
@@ -338,7 +338,7 @@
             "80"
         ],
         "calorie": [
-            "Calorie data for Bread not found.",
+            174.0,
             28.24,
             468.9,
             28.8
@@ -365,7 +365,7 @@
             "58"
         ],
         "calorie": [
-            "Calorie data for Bread not found."
+            174.0
         ]
     },
     {
@@ -407,7 +407,7 @@
             264.68,
             11.61,
             28.8,
-            "Calorie data for Bread not found."
+            174.0
         ]
     },
     {
@@ -425,7 +425,7 @@
         "calorie": [
             264.68,
             6.45,
-            "Calorie data for Bread not found."
+            90.0
         ]
     },
     {
@@ -445,7 +445,7 @@
         "calorie": [
             264.68,
             6.45,
-            "Calorie data for Bread not found.",
+            90.0,
             32.54
         ]
     },
@@ -551,7 +551,7 @@
         "calorie": [
             56.0,
             11.92,
-            "Calorie data for Bread not found."
+            90.0
         ]
     },
     {
@@ -571,7 +571,7 @@
         "calorie": [
             56.0,
             11.92,
-            "Calorie data for Bread not found.",
+            174.0,
             11.61
         ]
     },
