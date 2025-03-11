@@ -1,0 +1,911 @@
+[
+    {
+        "name": "e001",
+        "food type": [
+            "Clementine",
+            "Broccoli",
+            "Cauliflower",
+            "Chives",
+            "Jujube"
+        ],
+        "portion": [
+            "35",
+            "38",
+            "35",
+            "2",
+            "16"
+        ],
+        "calorie": [
+            16.55,
+            12.94,
+            8.08,
+            0.67,
+            10.06
+        ]
+    },
+    {
+        "name": "e017",
+        "food type": [
+            "Cauliflower"
+        ],
+        "portion": [
+            "39"
+        ],
+        "calorie": [
+            9.0
+        ]
+    },
+    {
+        "name": "e024",
+        "food type": [
+            "Clementine"
+        ],
+        "portion": [
+            "65"
+        ],
+        "calorie": [
+            30.74
+        ]
+    },
+    {
+        "name": "e036",
+        "food type": [
+            "Broccoli"
+        ],
+        "portion": [
+            "42"
+        ],
+        "calorie": [
+            14.3
+        ]
+    },
+    {
+        "name": "e046",
+        "food type": [
+            "Carrot",
+            "Cauliflower"
+        ],
+        "portion": [
+            "86",
+            "35"
+        ],
+        "calorie": [
+            35.25,
+            8.08
+        ]
+    },
+    {
+        "name": "e052",
+        "food type": [
+            "Mushrooms"
+        ],
+        "portion": [
+            "23"
+        ],
+        "calorie": [
+            5.75
+        ]
+    },
+    {
+        "name": "e061",
+        "food type": [
+            "Garlic"
+        ],
+        "portion": [
+            "10"
+        ],
+        "calorie": [
+            13.33
+        ]
+    },
+    {
+        "name": "e078",
+        "food type": [
+            "Broccoli",
+            "Garlic"
+        ],
+        "portion": [
+            "50",
+            "10"
+        ],
+        "calorie": [
+            17.02,
+            13.33
+        ]
+    },
+    {
+        "name": "e083",
+        "food type": [
+            "Chives",
+            "Garlic"
+        ],
+        "portion": [
+            "3",
+            "7"
+        ],
+        "calorie": [
+            1.0,
+            9.33
+        ]
+    },
+    {
+        "name": "e091",
+        "food type": [
+            "Jujube"
+        ],
+        "portion": [
+            "8"
+        ],
+        "calorie": [
+            5.03
+        ]
+    },
+    {
+        "name": "e106",
+        "food type": [
+            "Cherry Tomato",
+            "Raisins"
+        ],
+        "portion": [
+            "9",
+            "17"
+        ],
+        "calorie": [
+            9.0,
+            50.88
+        ]
+    },
+    {
+        "name": "e114",
+        "food type": [
+            "Carrot",
+            "Mushrooms"
+        ],
+        "portion": [
+            "86",
+            "23"
+        ],
+        "calorie": [
+            35.25,
+            5.75
+        ]
+    },
+    {
+        "name": "e129",
+        "food type": [
+            "Clementine",
+            "Cherry Tomato",
+            "Apple"
+        ],
+        "portion": [
+            "35",
+            "9",
+            "110"
+        ],
+        "calorie": [
+            16.55,
+            9.0,
+            57.42
+        ]
+    },
+    {
+        "name": "e132",
+        "food type": [
+            "Clementine",
+            "Cherry Tomato",
+            "Raisins",
+            "Apple"
+        ],
+        "portion": [
+            "35",
+            "9",
+            "17",
+            "110"
+        ],
+        "calorie": [
+            16.55,
+            9.0,
+            50.88,
+            57.42
+        ]
+    },
+    {
+        "name": "e149",
+        "food type": [
+            "Carrot",
+            "Broccoli",
+            "Cauliflower",
+            "Chives",
+            "Mushrooms"
+        ],
+        "portion": [
+            "86",
+            "38",
+            "35",
+            "2",
+            "23"
+        ],
+        "calorie": [
+            35.25,
+            12.94,
+            8.08,
+            0.67,
+            5.75
+        ]
+    },
+    {
+        "name": "e158",
+        "food type": [
+            "Clementine",
+            "Broccoli",
+            "Chives",
+            "Jujube",
+            "Apple"
+        ],
+        "portion": [
+            "35",
+            "38",
+            "2",
+            "16",
+            "110"
+        ],
+        "calorie": [
+            16.55,
+            12.94,
+            0.67,
+            10.06,
+            57.42
+        ]
+    },
+    {
+        "name": "v010",
+        "food type": [
+            "Bread",
+            "Cantaloupe",
+            "Grapes"
+        ],
+        "portion": [
+            "58",
+            "168",
+            "41"
+        ],
+        "calorie": [
+            58.0,
+            56.0,
+            28.24
+        ]
+    },
+    {
+        "name": "v012",
+        "food type": [
+            "Bread",
+            "Cantaloupe",
+            "Grapes"
+        ],
+        "portion": [
+            "58",
+            "168",
+            "41"
+        ],
+        "calorie": [
+            174.0,
+            56.0,
+            28.24
+        ]
+    },
+    {
+        "name": "v029",
+        "food type": [
+            "Bread",
+            "Cantaloupe",
+            "Grapes",
+            "Strawberries",
+            "Pineapple",
+            "Chicken Breast",
+            "Honeydew"
+        ],
+        "portion": [
+            "58",
+            "168",
+            "41",
+            "36",
+            "65",
+            "125",
+            "80"
+        ],
+        "calorie": [
+            174.0,
+            56.0,
+            28.24,
+            11.61,
+            32.54,
+            204.22,
+            28.8
+        ]
+    },
+    {
+        "name": "v034",
+        "food type": [
+            "Bread",
+            "Grapes",
+            "Chicken Breast",
+            "Honeydew"
+        ],
+        "portion": [
+            "58",
+            "41",
+            "287",
+            "80"
+        ],
+        "calorie": [
+            174.0,
+            28.24,
+            468.9,
+            28.8
+        ]
+    },
+    {
+        "name": "v048",
+        "food type": [
+            "Chicken Breast"
+        ],
+        "portion": [
+            "125"
+        ],
+        "calorie": [
+            204.22
+        ]
+    },
+    {
+        "name": "v057",
+        "food type": [
+            "Bread"
+        ],
+        "portion": [
+            "58"
+        ],
+        "calorie": [
+            174.0
+        ]
+    },
+    {
+        "name": "v065",
+        "food type": [
+            "Chicken Breast",
+            "Blueberries",
+            "Strawberries",
+            "Grapes"
+        ],
+        "portion": [
+            "287",
+            "21",
+            "36",
+            "41"
+        ],
+        "calorie": [
+            468.9,
+            11.92,
+            11.61,
+            28.24
+        ]
+    },
+    {
+        "name": "v080",
+        "food type": [
+            "Chicken Breast",
+            "Strawberries",
+            "Honeydew",
+            "Bread"
+        ],
+        "portion": [
+            "162",
+            "36",
+            "80",
+            "58"
+        ],
+        "calorie": [
+            264.68,
+            11.61,
+            28.8,
+            174.0
+        ]
+    },
+    {
+        "name": "v085",
+        "food type": [
+            "Chicken Breast",
+            "Strawberries",
+            "Bread"
+        ],
+        "portion": [
+            "162",
+            "20",
+            "30"
+        ],
+        "calorie": [
+            264.68,
+            6.45,
+            90.0
+        ]
+    },
+    {
+        "name": "v092",
+        "food type": [
+            "Chicken Breast",
+            "Strawberries",
+            "Bread",
+            "Pineapple"
+        ],
+        "portion": [
+            "162",
+            "20",
+            "30",
+            "65"
+        ],
+        "calorie": [
+            264.68,
+            6.45,
+            90.0,
+            32.54
+        ]
+    },
+    {
+        "name": "v110",
+        "food type": [
+            "Chicken Breast",
+            "Cantaloupe",
+            "Honeydew"
+        ],
+        "portion": [
+            "287",
+            "56",
+            "80"
+        ],
+        "calorie": [
+            468.9,
+            18.67,
+            28.8
+        ]
+    },
+    {
+        "name": "v119",
+        "food type": [
+            "Chicken Breast",
+            "Cantaloupe",
+            "Honeydew"
+        ],
+        "portion": [
+            "287",
+            "56",
+            "80"
+        ],
+        "calorie": [
+            468.9,
+            18.67,
+            28.8
+        ]
+    },
+    {
+        "name": "v128",
+        "food type": [
+            "Strawberries"
+        ],
+        "portion": [
+            "20"
+        ],
+        "calorie": [
+            6.45
+        ]
+    },
+    {
+        "name": "v138",
+        "food type": [
+            "Cantaloupe"
+        ],
+        "portion": [
+            "26"
+        ],
+        "calorie": [
+            8.67
+        ]
+    },
+    {
+        "name": "v145",
+        "food type": [
+            "Cantaloupe"
+        ],
+        "portion": [
+            "76"
+        ],
+        "calorie": [
+            25.33
+        ]
+    },
+    {
+        "name": "v161",
+        "food type": [
+            "Cantaloupe",
+            "Blueberries"
+        ],
+        "portion": [
+            "168",
+            "21"
+        ],
+        "calorie": [
+            56.0,
+            11.92
+        ]
+    },
+    {
+        "name": "v163",
+        "food type": [
+            "Cantaloupe",
+            "Blueberries",
+            "Bread"
+        ],
+        "portion": [
+            "168",
+            "21",
+            "30"
+        ],
+        "calorie": [
+            56.0,
+            11.92,
+            90.0
+        ]
+    },
+    {
+        "name": "v172",
+        "food type": [
+            "Cantaloupe",
+            "Blueberries",
+            "Bread",
+            "Strawberries"
+        ],
+        "portion": [
+            "168",
+            "21",
+            "58",
+            "36"
+        ],
+        "calorie": [
+            56.0,
+            11.92,
+            174.0,
+            11.61
+        ]
+    },
+    {
+        "name": "v185",
+        "food type": [
+            "Honeydew"
+        ],
+        "portion": [
+            "56"
+        ],
+        "calorie": [
+            20.16
+        ]
+    },
+    {
+        "name": "v199",
+        "food type": [
+            "Grapes"
+        ],
+        "portion": [
+            "41"
+        ],
+        "calorie": [
+            28.24
+        ]
+    },
+    {
+        "name": "v205",
+        "food type": [
+            "Grapes"
+        ],
+        "portion": [
+            "41"
+        ],
+        "calorie": [
+            28.24
+        ]
+    },
+    {
+        "name": "e167",
+        "food type": [
+            "Egg"
+        ],
+        "portion": [
+            "40"
+        ],
+        "calorie": [
+            62.4
+        ]
+    },
+    {
+        "name": "y011",
+        "food type": [
+            "Banana",
+            "Apple"
+        ],
+        "portion": [
+            "212",
+            "397"
+        ],
+        "calorie": [
+            188.26,
+            207.23
+        ]
+    },
+    {
+        "name": "y012",
+        "food type": [
+            "Banana",
+            "Apple",
+            "Orange"
+        ],
+        "portion": [
+            "212",
+            "397",
+            "182"
+        ],
+        "calorie": [
+            188.26,
+            207.23,
+            86.14
+        ]
+    },
+    {
+        "name": "y026",
+        "food type": [
+            "Egg",
+            "Banana"
+        ],
+        "portion": [
+            "117",
+            "212"
+        ],
+        "calorie": [
+            182.52,
+            188.26
+        ]
+    },
+    {
+        "name": "y041",
+        "food type": [
+            "Apple",
+            "Carrot",
+            "Egg",
+            "Onion"
+        ],
+        "portion": [
+            "211",
+            "147",
+            "58",
+            "205"
+        ],
+        "calorie": [
+            110.14,
+            60.25,
+            90.48,
+            82.0
+        ]
+    },
+    {
+        "name": "y046",
+        "food type": [
+            "Apple",
+            "Carrot",
+            "Egg",
+            "Onion",
+            "Orange"
+        ],
+        "portion": [
+            "211",
+            "147",
+            "58",
+            "205",
+            "182"
+        ],
+        "calorie": [
+            110.14,
+            60.25,
+            90.48,
+            82.0,
+            86.14
+        ]
+    },
+    {
+        "name": "y057",
+        "food type": [
+            "Cherry Tomato"
+        ],
+        "portion": [
+            "78"
+        ],
+        "calorie": [
+            78.0
+        ]
+    },
+    {
+        "name": "y062",
+        "food type": [
+            "Cherry Tomato"
+        ],
+        "portion": [
+            "78"
+        ],
+        "calorie": [
+            78.0
+        ]
+    },
+    {
+        "name": "y078",
+        "food type": [
+            "Cherry Tomato",
+            "Grapes",
+            "Blueberries"
+        ],
+        "portion": [
+            "71",
+            "140",
+            "22"
+        ],
+        "calorie": [
+            71.0,
+            96.42,
+            12.49
+        ]
+    },
+    {
+        "name": "y085",
+        "food type": [
+            "Cherry Tomato",
+            "Grapes",
+            "Blueberries"
+        ],
+        "portion": [
+            "71",
+            "140",
+            "22"
+        ],
+        "calorie": [
+            71.0,
+            96.42,
+            12.49
+        ]
+    },
+    {
+        "name": "y096",
+        "food type": [
+            "Cherry Tomato",
+            "Grapes",
+            "Blueberries"
+        ],
+        "portion": [
+            "71",
+            "140",
+            "46"
+        ],
+        "calorie": [
+            71.0,
+            96.42,
+            26.11
+        ]
+    },
+    {
+        "name": "y104",
+        "food type": [
+            "Blueberries",
+            "Pear"
+        ],
+        "portion": [
+            "46",
+            "300"
+        ],
+        "calorie": [
+            26.11,
+            170.23
+        ]
+    },
+    {
+        "name": "y120",
+        "food type": [
+            "Pear"
+        ],
+        "portion": [
+            "180"
+        ],
+        "calorie": [
+            102.14
+        ]
+    },
+    {
+        "name": "y130",
+        "food type": [
+            "Sweet Potato"
+        ],
+        "portion": [
+            "76"
+        ],
+        "calorie": [
+            65.48
+        ]
+    },
+    {
+        "name": "y136",
+        "food type": [
+            "Sweet Potato"
+        ],
+        "portion": [
+            "201"
+        ],
+        "calorie": [
+            173.17
+        ]
+    },
+    {
+        "name": "y144",
+        "food type": [
+            "Sweet Potato",
+            "Egg"
+        ],
+        "portion": [
+            "222",
+            "53"
+        ],
+        "calorie": [
+            191.26,
+            82.68
+        ]
+    },
+    {
+        "name": "y160",
+        "food type": [
+            "Sweet Potato"
+        ],
+        "portion": [
+            "93"
+        ],
+        "calorie": [
+            80.12
+        ]
+    },
+    {
+        "name": "y171",
+        "food type": [
+            "Sweet Potato"
+        ],
+        "portion": [
+            "221"
+        ],
+        "calorie": [
+            190.4
+        ]
+    },
+    {
+        "name": "y176",
+        "food type": [
+            "Sweet Potato"
+        ],
+        "portion": [
+            "162"
+        ],
+        "calorie": [
+            139.57
+        ]
+    },
+    {
+        "name": "y191",
+        "food type": [
+            "Sweet Potato"
+        ],
+        "portion": [
+            "68"
+        ],
+        "calorie": [
+            58.58
+        ]
+    }
+]
