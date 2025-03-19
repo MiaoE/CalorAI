@@ -27,18 +27,18 @@ def count_food_types(json_file_path):
 Bread: 98
 Grapes: 93
 Cherry Tomato: 91
-Chicken Breast: 89
-Cantaloupe: 83
-Strawberries: 78
-Blueberries: 67
+Chicken Breast: 159
+Cantaloupe: 156
+Strawberries: 166
+Blueberries: 182
 Sweet Potato: 65
-Egg: 62
-Broccoli: 57
+Egg: 102
+Broccoli: 83
 Apple: 51
 Carrot: 50
-Honeydew: 44
+Honeydew: 81
 Clementine: 41
-Pineapple: 38
+Pineapple: 188
 Garlic: 34
 Pear: 33
 Chives: 30
