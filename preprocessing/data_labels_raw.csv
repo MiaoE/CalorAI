@@ -1,574 +1,1094 @@
-Figure Name,Food Items ,Portion Size (g)
-e001,"Clementine,Broccoli,Cauliflower,Chives,Jujube","35,38,35,2,16"
-e002,"Clementine,Broccoli,Cauliflower,Chives,Jujube","35,38,35,5,16"
-e003,"Clementine,Broccoli,Cauliflower,Cherry Tomato,Chives,Jujube","35,38,35,20,5,16"
-e004,"Clementine,Broccoli,Cauliflower,Cherry Tomato,Chives,Jujube","35,38,35,33,5,16"
-e005,Clementine,30
-e006,Clementine,30
-e007,Clementine,35
-e008,Clementine,35
-e009,Carrot,86
-e010,Broccoli,23
-e011,Broccoli,23
-e012,Broccoli,15
-e013,Broccoli,15
-e014,Broccoli,27
-e015,Broccoli,27
-e016,Cauliflower,39
-e017,Cauliflower,39
-e018,Cauliflower,35
-e019,Cauliflower,35
-e020,Cherry Tomato,11
-e021,Cherry Tomato,9
-e022,Cherry Tomato,13
-e023,Cherry Tomato,7
-e024,Clementine,65
-e025,Clementine,65
-e026,Cherry Tomato,20
-e027,Cherry Tomato,24
-e028,Cherry Tomato,18
-e029,Cherry Tomato,22
-e030,Cherry Tomato,16
-e031,Cherry Tomato,20
-e032,Broccoli,38
-e033,Broccoli,50
-e034,"Broccoli,Cauliflower","23,39"
-e035,"Broccoli,Cauliflower","23,35"
-e036,Broccoli,42
-e037,"Broccoli,Cauliflower","15,39"
-e038,"Broccoli,Cauliflower","15,35"
-e039,"Broccoli,Cauliflower","27,39"
-e040,"Broccoli,Cauliflower","27,35"
-e041,Cauliflower,74
-e042,"Carrot,Broccoli","86,23"
-e043,"Carrot,Broccoli","86,15"
-e044,"Carrot,Broccoli","86,27"
-e045,"Carrot,Cauliflower","86,39"
-e046,"Carrot,Cauliflower","86,35"
-e047,Chives,2
-e048,Chives,3
-e049,Mushrooms,23
-e050,Mushrooms,23
-e051,Mushrooms,23
-e052,Mushrooms,23
-e053,Garlic,7
-e054,Garlic,4
-e055,Garlic,3
-e056,Garlic,7
-e057,Garlic,11
-e058,Garlic,10
-e059,Garlic,14
-e060,Garlic,7
-e061,Garlic,10
-e062,Garlic,11
-e063,Potato,104
-e064,Potato,104
-e065,Potato,104
-e066,Potato,104
-e067,"Broccoli,Potato","38,104"
-e068,"Broccoli,Potato","38,104"
-e069,"Broccoli,Potato","50,104"
-e070,"Broccoli,Potato","50,104"
-e071,"Garlic,Potato","14,104"
-e072,"Garlic,Potato","14,104"
-e073,"Garlic,Potato","14,104"
-e074,"Garlic,Potato","11,104"
-e075,"Garlic,Potato","11,104"
-e076,"Broccoli,Garlic","38,10"
-e077,"Broccoli,Garlic","38,10"
-e078,"Broccoli,Garlic","50,10"
-e079,"Broccoli,Garlic","50,10"
-e080,"Cauliflower,Garlic","39,7"
-e081,"Cauliflower,Garlic","35,7"
-e082,"Chives,Garlic","3,3"
-e083,"Chives,Garlic","3,7"
-e084,"Chives,Garlic","3,10"
-e085,"Broccoli,Chives","15,2"
-e086,"Broccoli,Chives","15,2"
-e087,"Broccoli,Chives","23,2"
-e088,"Broccoli,Chives","23,2"
-e089,"Broccoli,Chives","23,5"
-e090,"Broccoli,Chives","15,5"
-e091,Jujube,8
-e092,Jujube,8
-e093,Jujube,8
-e094,Jujube,8
-e095,Jujube,16
-e096,Jujube,16
-e097,Raisins,30
-e098,Raisins,30
-e099,"Cherry Tomato,Raisins","24,30"
-e100,"Cherry Tomato,Raisins","24,30"
-e101,Clementine,35
-e102,Clementine,35
-e103,Clementine,35
-e104,Clementine,35
-e105,"Cherry Tomato,Raisins","9,17"
-e106,"Cherry Tomato,Raisins","9,17"
-e107,"Clementine,Cherry Tomato,Raisins","35,9,17"
-e108,"Clementine,Cherry Tomato,Raisins","35,9,17"
-e109,"Clementine,Cherry Tomato,Raisins","35,9,17"
-e110,"Broccoli,Mushrooms","15,23"
-e111,"Broccoli,Mushrooms","15,23"
-e112,"Carrot,Mushrooms","86,23"
-e113,"Carrot,Mushrooms","86,23"
-e114,"Carrot,Mushrooms","86,23"
-e115,"Carrot,Mushrooms","86,23"
-e116,"Carrot,Mushrooms","86,23"
-e117,"Carrot,Broccoli","86,38"
-e118,"Carrot,Broccoli","86,38"
-e119,"Carrot,Broccoli","86,50"
-e120,"Carrot,Broccoli","86,50"
-e121,"Carrot,Broccoli,Cauliflower","86,15,35"
-e122,"Carrot,Broccoli,Cauliflower","86,15,35"
-e123,"Clementine,Apple","35,110"
-e124,"Clementine,Apple","35,110"
-e125,"Clementine,Cherry Tomato,Apple","35,9,110"
-e126,"Clementine,Cherry Tomato,Apple","35,9,110"
-e127,"Clementine,Cherry Tomato,Apple","35,9,110"
-e128,"Clementine,Cherry Tomato,Apple","35,9,110"
-e129,"Clementine,Cherry Tomato,Apple","35,9,110"
-e130,"Clementine,Cherry Tomato,Apple","35,9,110"
-e131,"Clementine,Cherry Tomato,Raisins,Apple","35,9,17,110"
-e132,"Clementine,Cherry Tomato,Raisins,Apple","35,9,17,110"
-e133,"Clementine,Cherry Tomato,Jujube","35,20,8"
-e134,"Clementine,Cherry Tomato,Jujube","35,20,8"
-e135,"Clementine,Cherry Tomato,Jujube","35,22,8"
-e136,"Clementine,Cherry Tomato,Jujube,Raisins","35,13,8,30"
-e137,"Clementine,Cherry Tomato,Jujube,Raisins","35,13,8,30"
-e138,"Clementine,Cherry Tomato,Jujube,Raisins","35,13,8,30"
-e139,"Clementine,Cherry Tomato,Jujube,Raisins","35,22,8,30"
-e140,"Clementine,Cherry Tomato,Jujube,Raisins","35,22,8,30"
-e141,"Clementine,Cherry Tomato,Jujube,Raisins,Apple","35,22,8,30,110"
-e142,"Clementine,Cherry Tomato,Jujube,Raisins,Apple","35,22,8,30,110"
-e143,"Clementine,Cherry Tomato,Jujube,Raisins,Apple","35,22,8,30,110"
-e144,"Clementine,Cherry Tomato,Jujube,Raisins,Apple","35,22,8,30,110"
-e145,"Carrot,Broccoli,Cauliflower,Chives","86,38,35,2"
-e146,"Carrot,Broccoli,Cauliflower,Chives","86,38,35,2"
-e147,"Carrot,Broccoli,Cauliflower,Chives","86,38,35,2"
-e148,"Carrot,Broccoli,Cauliflower,Chives,Mushrooms","86,38,35,2,23"
-e149,"Carrot,Broccoli,Cauliflower,Chives,Mushrooms","86,38,35,2,23"
-e150,"Carrot,Broccoli,Cauliflower,Chives,Mushrooms","86,38,35,2,23"
-e151,"Carrot,Broccoli,Cauliflower,Chives,Mushrooms","86,38,35,2,23"
-e152,"Carrot,Chives,Apple","86,2,110"
-e153,"Carrot,Chives,Apple","86,2,110"
-e154,"Carrot,Broccoli,Chives,Apple","86,15,2,110"
-e155,"Carrot,Broccoli,Chives,Apple","86,38,2,110"
-e156,"Broccoli,Chives,Jujube,Apple","38,2,8,110"
-e157,"Broccoli,Chives,Jujube,Apple","38,2,16,110"
-e158,"Clementine,Broccoli,Chives,Jujube,Apple","35,38,2,16,110"
-e159,"Clementine,Broccoli,Chives,Jujube","35,38,2,16"
-v001,"Chicken Breast,Cantaloupe,Honeydew","287,80,168"
-v002,Bread,30
-v003,Grapes,25
-v004,Grapes,25
-v005,Grapes,25
-v006,Grapes,25
-v007,"Bread,Cantaloupe,Grapes","30,168,41"
-v008,"Bread,Cantaloupe,Grapes","30,168,41"
-v009,"Bread,Cantaloupe,Grapes","30,168,41"
-v010,"Bread,Cantaloupe,Grapes","58,168,41"
-v011,"Bread,Cantaloupe,Grapes","58,168,41"
-v012,"Bread,Cantaloupe,Grapes","58,168,41"
-v013,Bread,30
-v014,"Bread,Cantaloupe,Grapes,Strawberries","58,168,41,36"
-v015,"Bread,Cantaloupe,Grapes,Strawberries","58,168,41,36"
-v016,"Bread,Cantaloupe,Grapes,Strawberries","58,168,41,36"
-v017,"Bread,Cantaloupe,Grapes,Strawberries","58,168,41,36"
-v018,"Bread,Cantaloupe,Grapes,Strawberries","58,168,41,36"
-v019,"Bread,Cantaloupe,Grapes,Strawberries","58,168,41,36"
-v020,"Bread,Cantaloupe,Grapes,Strawberries","58,168,41,36"
-v021,"Bread,Cantaloupe,Grapes,Strawberries,Pineapple","58,168,41,36,65"
-v022,"Bread,Cantaloupe,Grapes,Strawberries,Pineapple","58,168,41,36,65"
-v023,"Bread,Cantaloupe,Grapes,Strawberries,Pineapple","58,168,41,36,65"
-v024,Bread,58
-v025,"Bread,Cantaloupe,Grapes,Strawberries,Pineapple","58,168,41,36,65"
-v026,"Bread,Cantaloupe,Grapes,Strawberries,Pineapple,Chicken Breast","58,168,41,36,65,125"
-v027,"Bread,Cantaloupe,Grapes,Strawberries,Pineapple,Chicken Breast","58,168,41,36,65,125"
-v028,"Bread,Cantaloupe,Grapes,Strawberries,Pineapple,Chicken Breast","58,168,41,36,65,125"
-v029,"Bread,Cantaloupe,Grapes,Strawberries,Pineapple,Chicken Breast,Honeydew","58,168,41,36,65,125,80"
-v030,"Bread,Cantaloupe,Grapes,Strawberries,Pineapple,Chicken Breast,Honeydew","58,168,41,36,65,125,80"
-v031,"Bread,Cantaloupe,Grapes,Strawberries,Pineapple,Chicken Breast,Honeydew","58,168,41,36,65,125,80"
-v032,"Bread,Grapes,Chicken Breast","58,41,287"
-v033,"Bread,Grapes,Chicken Breast","58,41,287"
-v034,"Bread,Grapes,Chicken Breast,Honeydew","58,41,287,80"
-v035,Bread,58
-v036,"Bread,Grapes,Chicken Breast,Honeydew","58,41,287,80"
-v037,"Bread,Grapes,Chicken Breast,Honeydew","58,41,287,80"
-v038,"Bread,Grapes,Chicken Breast,Honeydew","58,41,287,80"
-v039,"Bread,Grapes,Chicken Breast,Honeydew","58,41,287,80"
-v040,"Bread,Grapes,Chicken Breast,Honeydew","58,41,287,80"
-v041,"Bread,Grapes,Chicken Breast,Honeydew","58,41,287,80"
-v042,"Bread,Grapes,Chicken Breast,Honeydew","58,41,287,80"
-v043,Chicken Breast,125
-v044,Chicken Breast,125
-v045,Chicken Breast,125
-v046,Bread,58
-v047,Chicken Breast,125
-v048,Chicken Breast,125
-v049,Chicken Breast,125
-v050,Chicken Breast,125
-v051,Chicken Breast,125
-v052,Chicken Breast,287
-v053,Chicken Breast,287
-v054,Chicken Breast,287
-v055,Chicken Breast,287
-v056,Chicken Breast,287
-v057,Bread,58
-v058,Chicken Breast,287
-v059,Chicken Breast,287
-v060,Chicken Breast,287
-v061,Chicken Breast,287
-v062,Chicken Breast,287
-v063,"Chicken Breast,Blueberries,Strawberries","287,21,36"
-v064,"Chicken Breast,Blueberries,Strawberries","287,21,36"
-v065,"Chicken Breast,Blueberries,Strawberries,Grapes","287,21,36,41"
-v066,"Chicken Breast,Blueberries,Strawberries,Grapes","287,21,36,41"
-v067,"Chicken Breast,Blueberries,Strawberries,Grapes","287,21,36,41"
-v068,Blueberries,10
-v069,"Chicken Breast,Blueberries,Strawberries,Grapes,Bread","287,21,36,41,30"
-v070,"Chicken Breast,Blueberries,Strawberries,Grapes,Bread,Pineapple","287,21,36,41,30,65"
-v071,"Chicken Breast,Blueberries,Strawberries,Grapes,Bread,Pineapple","287,21,36,41,30,65"
-v072,"Chicken Breast,Blueberries,Strawberries,Grapes,Bread,Pineapple","287,21,36,41,30,65"
-v073,"Chicken Breast,Blueberries,Strawberries,Grapes,Bread,Pineapple","287,21,36,41,58,65"
-v074,"Chicken Breast,Blueberries,Strawberries,Grapes,Bread,Pineapple","287,21,36,41,58,65"
-v075,"Chicken Breast,Blueberries,Strawberries,Grapes,Bread,Pineapple","287,21,36,41,58,65"
-v076,"Chicken Breast,Blueberries,Strawberries,Honeydew,Bread,Pineapple       ","162,21,36,80,58,65"
-v077,"Chicken Breast,Blueberries,Strawberries,Honeydew,Bread,Pineapple       ","162,21,36,80,58,65"
-v078,"Chicken Breast,Strawberries,Honeydew,Bread","162,36,80,58"
-v079,Blueberries,10
-v080,"Chicken Breast,Strawberries,Honeydew,Bread","162,36,80,58"
-v081,"Chicken Breast,Honeydew,Bread","162,80,58"
-v082,"Chicken Breast,Strawberries,Bread","162,36,58"
-v083,"Chicken Breast,Strawberries","162,36"
-v084,"Chicken Breast,Strawberries","162,36"
-v085,"Chicken Breast,Strawberries,Bread","162,20,30"
-v086,"Chicken Breast,Strawberries,Bread","162,20,30"
-v087,"Chicken Breast,Strawberries,Bread","162,20,30"
-v088,"Chicken Breast,Strawberries,Bread,Pineapple","162,20,30,65"
-v089,"Chicken Breast,Strawberries,Bread,Pineapple","162,20,30,65"
-v090,Blueberries,10
-v091,"Chicken Breast,Strawberries,Bread,Pineapple","162,20,30,65"
-v092,"Chicken Breast,Strawberries,Bread,Pineapple","162,20,30,65"
-v093,"Chicken Breast,Strawberries,Bread,Pineapple","162,20,30,65"
-v094,"Chicken Breast,Strawberries,Bread,Pineapple","162,20,30,65"
-v095,"Chicken Breast,Strawberries,Bread,Pineapple","162,20,30,65"
-v096,"Chicken Breast,Strawberries,Bread,Pineapple","162,20,30,65"
-v097,"Chicken Breast,Strawberries,Bread,Pineapple","162,20,30,65"
-v098,"Chicken Breast,Strawberries,Bread,Cantaloupe","162,20,30,56"
-v099,"Chicken Breast,Strawberries,Bread,Cantaloupe","162,20,30,56"
-v100,"Chicken Breast,Strawberries,Bread,Cantaloupe,Honeydew","162,20,30,56,80"
-v101,Blueberries,10
-v102,"Chicken Breast,Strawberries,Bread,Cantaloupe,Honeydew","162,20,30,56,80"
-v103,"Chicken Breast,Strawberries,Bread,Cantaloupe,Honeydew","162,20,30,56,80"
-v104,"Chicken Breast,Strawberries,Bread,Cantaloupe,Honeydew","287,20,30,56,80"
-v105,"Chicken Breast,Strawberries,Bread,Cantaloupe,Honeydew","287,20,30,56,80"
-v106,"Chicken Breast,Strawberries,Bread,Cantaloupe,Honeydew","287,20,30,56,80"
-v107,"Chicken Breast,Strawberries,Bread,Cantaloupe,Honeydew","287,20,58,56,80"
-v108,"Chicken Breast,Strawberries,Bread,Cantaloupe,Honeydew","287,20,58,56,80"
-v109,"Chicken Breast,Strawberries,Bread,Cantaloupe,Honeydew","287,20,58,56,80"
-v110,"Chicken Breast,Cantaloupe,Honeydew","287,56,80"
-v111,Bread,30
-v112,Blueberries,10
-v113,"Chicken Breast,Cantaloupe,Honeydew","287,56,80"
-v114,"Chicken Breast,Cantaloupe,Honeydew","287,56,80"
-v115,"Chicken Breast,Cantaloupe,Honeydew","287,56,80"
-v116,"Chicken Breast,Cantaloupe,Honeydew","287,56,80"
-v117,"Chicken Breast,Cantaloupe,Honeydew","287,56,80"
-v118,"Chicken Breast,Cantaloupe,Honeydew","287,56,80"
-v119,"Chicken Breast,Cantaloupe,Honeydew","287,56,80"
-v120,"Chicken Breast,Cantaloupe,Honeydew","287,56,80"
-v121,"Chicken Breast,Cantaloupe,Honeydew","287,56,80"
-v122,"Chicken Breast,Cantaloupe,Honeydew","287,56,80"
-v123,Blueberries,21
-v124,Blueberries,21
-v125,Blueberries,21
-v126,Blueberries,21
-v127,Strawberries,20
-v128,Strawberries,20
-v129,Strawberries,20
-v130,Strawberries,36
-v131,Strawberries,36
-v132,Bread,58
-v133,Strawberries,36
-v134,Strawberries,36
-v135,Strawberries,36
-v136,Strawberries,36
-v137,Strawberries,36
-v138,Cantaloupe,26
-v139,Cantaloupe,26
-v140,Cantaloupe,26
-v141,Cantaloupe,26
-v142,Cantaloupe,26
-v143,Bread,58
-v144,Cantaloupe,26
-v145,Cantaloupe,76
-v146,Cantaloupe,76
-v147,Cantaloupe,76
-v148,Cantaloupe,76
-v149,Cantaloupe,76
-v150,Cantaloupe,76
-v151,Cantaloupe,76
-v152,Cantaloupe,168
-v153,Cantaloupe,168
-v154,Bread,30
-v155,Cantaloupe,168
-v156,Cantaloupe,168
-v157,Cantaloupe,168
-v158,Cantaloupe,168
-v159,Cantaloupe,168
-v160,Cantaloupe,168
-v161,"Cantaloupe,Blueberries","168,21"
-v162,"Cantaloupe,Blueberries,Bread","168,21,30"
-v163,"Cantaloupe,Blueberries,Bread","168,21,30"
-v164,"Cantaloupe,Blueberries,Bread","168,21,30"
-v165,Bread,58
-v166,"Cantaloupe,Blueberries,Bread","168,21,58"
-v167,"Cantaloupe,Blueberries,Bread","168,21,58"
-v168,"Cantaloupe,Blueberries,Bread","168,21,58"
-v169,"Cantaloupe,Blueberries,Bread,Strawberries","168,21,58,36"
-v170,"Cantaloupe,Blueberries,Bread,Strawberries","168,21,58,36"
-v171,"Cantaloupe,Blueberries,Bread,Strawberries","168,21,58,36"
-v172,"Cantaloupe,Blueberries,Bread,Strawberries","168,21,58,36"
-v173,"Cantaloupe,Blueberries,Bread,Strawberries","168,21,58,36"
-v174,"Cantaloupe,Blueberries,Bread,Strawberries","168,21,58,36"
-v175,"Cantaloupe,Blueberries,Bread,Strawberries","168,21,58,36"
-v176,Bread,58
-v177,"Cantaloupe,Blueberries,Bread,Strawberries","168,21,58,36"
-v178,"Cantaloupe,Blueberries,Bread,Strawberries","168,21,58,36"
-v179,Honeydew,56
-v180,Honeydew,56
-v181,Honeydew,56
-v182,Honeydew,56
-v183,Honeydew,56
-v184,Honeydew,56
-v185,Honeydew,56
-v186,Pineapple,65
-v187,Bread,58
-v188,Pineapple,65
-v189,Pineapple,65
-v190,Pineapple,65
-v191,Pineapple,65
-v192,Pineapple,65
-v193,Pineapple,43
-v194,Pineapple,43
-v195,Pineapple,43
-v196,Pineapple,43
-v197,Pineapple,43
-v198,Bread,58
-v199,Grapes,41
-v200,Grapes,41
-v201,Grapes,41
-v202,Grapes,41
-v203,Grapes,41
-v204,Grapes,41
-v205,Grapes,41
-v206,Grapes,25
-v207,Grapes,25
-v208,Grapes,25
-e160,Egg,38
-e161,Egg,38
-e162,Egg,38
-e163,Egg,38
-e164,Egg,40
-e165,Egg,40
-e166,Egg,40
-e167,Egg,40
-e168,Egg,37
-e169,Egg,37
-e170,Egg,36
-e171,Egg,36
-y001,Apple,211
-y002,Apple ,186
-y003,Apple,397
-y004,Apple,397
-y005,Apple,186
-y006,Banana,212
-y007,"Banana,Apple","212,186"
-y008,"Banana,Apple,Orange","212,186,182"
-y009,"Banana,Apple","212,397"
-y010,"Banana,Apple","212,397"
-y011,"Banana,Apple","212,397"
-y012,"Banana,Apple,Orange","212,397,182"
-y013,Orange,231
-y014,"Apple,Orange","231,211"
-y015,"Banana,Apple,Orange","212,397,231"
-y016,"Orange,Apple,Garlic","231,211,45"
-y017,"Banana,Apple,Orange","212,397,182"
-y018,"Banana,Apple,Orange,Garlic","212,211,182,45"
-y019,"Apple,Orange,Garlic","211,231,87"
-y020,"Banana,Apple,Orange,Garlic","212,211,182,87"
-y021,Orange,49
-y022,Orange,49
-y023,Orange,49
-y024,Egg,59
-y025,Egg,117
-y026,"Egg,Banana","117,212"
-y027,"Egg,Banana,Garlic","117,212,41"
-y028,"Banana,Apple,Egg","212,186,117"
-y029,"Banana,Egg,Orange","212,117,182"
-y030,"Carrot,Egg","147,117"
-y031,"Carrot,Egg,Potato","147,117,270"
-y032,"Banana,Carrot,Egg,Potato","212,147,58,270"
-y033,"Banana,Carrot,Egg,Potato","212,147,58,270"
-y034,"Carrot,Egg","147,58"
-y035,"Carrot,Egg,Garlic","147,58,41"
-y036,"Carrot,Egg,Orange","147,58,182"
-y037,"Carrot,Egg,Potato","147,58,270"
-y038,"Carrot,Egg,Onion","147,58,205"
-y039,"Carrot,Egg,Potato,Onion","147,58,270,205"
-y040,"Carrot,Egg,Orange,Onion","147,58,182,205"
-y041,"Apple,Carrot,Egg,Onion","211,147,58,205"
-y042,"Apple,Carrot,Egg,Onion","211,147,58,205"
-y043,"Apple,Carrot,Egg,Onion,Orange","211,147,58,205,49"
-y044,"Apple,Carrot,Egg,Onion,Orange","211,147,58,205,49"
-y045,"Apple,Carrot,Egg,Onion,Orange","211,147,58,205,231"
-y046,"Apple,Carrot,Egg,Onion,Orange","211,147,58,205,182"
-y047,"Apple,Carrot,Egg,Onion,Orange,Potato","211,147,58,205,182,270"
-y048,"Banana,Apple,Carrot,Egg,Onion,Orange,Garlic","212,211,147,58,205,182,41"
-y049,"Banana,Apple,Carrot,Egg,Onion,Orange,Garlic,Potato","212,211,147,117,205,182,87,270"
-y050,"Banana,Apple,Carrot,Egg,Onion,Garlic","212,211,147,117,205,87"
-y051,"Banana,Apple,Carrot,Egg,Onion,Garlic","212,211,147,117,205,87"
-y052,Cherry Tomato,11
-y053,Cherry Tomato,24
-y054,Cherry Tomato,13
-y055,Cherry Tomato,49
-y056,Cherry Tomato,15
-y057,Cherry Tomato,78
-y058,Cherry Tomato,78
-y059,Cherry Tomato,78
-y060,Cherry Tomato,78
-y061,Cherry Tomato,78
-y062,Cherry Tomato,78
-y063,Cherry Tomato,78
-y064,Cherry Tomato,78
-y065,"Cherry Tomato,Pear","78,276"
-y066,"Cherry Tomato,Pear","78,276"
-y067,"Cherry Tomato,Pear","78,276"
-y068,"Cherry Tomato,Pear","78,276"
-y069,"Cherry Tomato,Pear","78,276"
-y070,"Cherry Tomato,Pear","78,276"
-y071,Grapes,140
-y072,Grapes,140
-y073,Grapes,140
-y074,Grapes,140
-y075,"Cherry Tomato,Grapes","71,140"
-y076,"Cherry Tomato,Grapes","71,140"
-y077,"Cherry Tomato,Grapes","71,140"
-y078,"Cherry Tomato,Grapes,Blueberries","71,140,22"
-y079,"Cherry Tomato,Grapes,Blueberries","71,140,22"
-y080,"Cherry Tomato,Grapes,Blueberries","71,140,22"
-y081,"Cherry Tomato,Grapes,Blueberries","71,140,22"
-y082,"Cherry Tomato,Grapes,Blueberries","71,140,22"
-y083,"Cherry Tomato,Grapes,Blueberries","71,140,22"
-y084,"Cherry Tomato,Grapes,Blueberries","71,140,22"
-y085,"Cherry Tomato,Grapes,Blueberries","71,140,22"
-y086,"Cherry Tomato,Grapes,Blueberries","71,140,22"
-y087,"Cherry Tomato,Grapes,Blueberries","71,140,22"
-y088,"Cherry Tomato,Grapes,Blueberries","71,140,22"
-y089,"Cherry Tomato,Grapes,Blueberries","71,140,22"
-y090,"Cherry Tomato,Grapes,Blueberries","71,140,22"
-y091,"Cherry Tomato,Grapes,Blueberries","71,140,46"
-y092,"Cherry Tomato,Grapes,Blueberries","71,140,46"
-y093,"Cherry Tomato,Grapes,Blueberries","71,140,46"
-y094,"Cherry Tomato,Grapes,Blueberries","71,140,46"
-y095,"Cherry Tomato,Grapes,Blueberries","71,140,46"
-y096,"Cherry Tomato,Grapes,Blueberries","71,140,46"
-y097,"Cherry Tomato,Grapes,Blueberries","71,140,46"
-y098,"Cherry Tomato,Grapes,Blueberries","103,140,46"
-y099,"Cherry Tomato,Grapes,Blueberries","103,140,46"
-y100,"Cherry Tomato,Grapes,Blueberries","103,140,46"
-y101,"Cherry Tomato,Grapes,Blueberries","103,140,46"
-y102,"Cherry Tomato,Grapes,Blueberries","103,140,46"
-y103,"Blueberries,Pear","46,300"
-y104,"Blueberries,Pear","46,300"
-y105,"Blueberries,Pear","46,300"
-y106,Pear,300
-y107,Pear,300
-y108,Pear,576
-y109,Pear,60
-y110,Pear,60
-y111,Pear,240
-y112,Pear,240
-y113,Pear,133
-y114,Pear,133
-y115,Pear,51
-y116,Pear,180
-y117,Pear,180
-y118,Pear,180
-y119,Pear,180
-y120,Pear,180
-y121,Pear,180
-y122,Pear,180
-y123,Pear,180
-y124,Pear,180
-y125,Pear,180
-y126,"Pear,Grapes","180,95"
-y127,"Pear,Grapes","180,95"
-y128,"Pear,Grapes,Cherry Tomato","180,95,57"
-y129,"Pear,Grapes,Cherry Tomato","180,95,57"
-y130,Sweet Potato,76
-y131,Sweet Potato,126
-y132,Sweet Potato,126
-y133,Sweet Potato,201
-y134,Sweet Potato,201
-y135,Sweet Potato,201
-y136,Sweet Potato,201
-y137,Sweet Potato,201
-y138,Sweet Potato,93
-y139,Sweet Potato,93
-y140,Sweet Potato,296
-y141,Sweet Potato,296
-y142,"Sweet Potato,Egg","124,53"
-y143,"Sweet Potato,Egg","124,53"
-y144,"Sweet Potato,Egg","222,53"
-y145,"Sweet Potato,Egg","222,53"
-y146,"Sweet Potato,Egg","222,53"
-y147,"Sweet Potato,Egg","222,53"
-y148,"Sweet Potato,Egg","222,53"
-y149,"Sweet Potato,Egg","222,109"
-y150,"Sweet Potato,Egg","222,109"
-y151,"Sweet Potato,Egg","222,109"
-y152,"Sweet Potato,Egg","222,109"
-y153,"Sweet Potato,Egg","222,109"
-y154,"Sweet Potato,Egg,Cherry Tomato","222,109,52"
-y155,"Sweet Potato,Egg,Cherry Tomato","222,109,52"
-y156,"Sweet Potato,Egg,Cherry Tomato","222,109,52"
-y157,Sweet Potato,38
-y158,Sweet Potato,55
-y159,Sweet Potato,93
-y160,Sweet Potato,93
-y161,Sweet Potato,93
-y162,Sweet Potato,93
-y163,Sweet Potato,93
-y164,Sweet Potato,93
-y165,Sweet Potato,221
-y166,Sweet Potato,221
-y167,Sweet Potato,221
-y168,Sweet Potato,221
-y169,Sweet Potato,221
-y170,Sweet Potato,221
-y171,Sweet Potato,221
-y172,Sweet Potato,221
-y173,Sweet Potato,162
-y174,Sweet Potato,162
-y175,Sweet Potato,162
-y176,Sweet Potato,162
-y177,Sweet Potato,162
-y178,Sweet Potato,162
-y179,Sweet Potato,162
-y180,Sweet Potato,106
-y181,Sweet Potato,106
-y182,Sweet Potato,106
-y183,"Sweet Potato,Egg","106,53"
-y184,"Sweet Potato,Egg","106,109"
-y185,"Sweet Potato,Egg","106,109"
-y186,"Sweet Potato,Egg","162,109"
-y187,"Sweet Potato,Egg","221,109"
-y188,"Sweet Potato,Egg","221,109"
-y189,"Sweet Potato,Egg","221,109"
-y190,Sweet Potato,68
-y191,Sweet Potato,68
-y192,Sweet Potato,68
-y193,Sweet Potato,68
-y194,Sweet Potato,68
+Figure Name,Food Items ,Portion Size (g),Error Checking ==>,Food Items Count,Portion Count,Equals
+e001,"Clementine,Broccoli,Cauliflower,Chives,Jujube","35,38,35,2,16",,5,5,True
+e002,"Clementine,Broccoli,Cauliflower,Chives,Jujube","35,38,35,5,16",,5,5,True
+e003,"Clementine,Broccoli,Cauliflower,Cherry Tomato,Chives,Jujube","35,38,35,20,5,16",,6,6,True
+e004,"Clementine,Broccoli,Cauliflower,Cherry Tomato,Chives,Jujube","35,38,35,33,5,16",,6,6,True
+e005,Clementine,30,,1,1,True
+e006,Clementine,30,,1,1,True
+e007,Clementine,35,,1,1,True
+e008,Clementine,35,,1,1,True
+e009,Carrot,86,,1,1,True
+e010,Broccoli,23,,1,1,True
+e011,Broccoli,23,,1,1,True
+e012,Broccoli,15,,1,1,True
+e013,Broccoli,15,,1,1,True
+e014,Broccoli,27,,1,1,True
+e015,Broccoli,27,,1,1,True
+e016,Cauliflower,39,,1,1,True
+e017,Cauliflower,39,,1,1,True
+e018,Cauliflower,35,,1,1,True
+e019,Cauliflower,35,,1,1,True
+e020,Cherry Tomato,11,,1,1,True
+e021,Cherry Tomato,9,,1,1,True
+e022,Cherry Tomato,13,,1,1,True
+e023,Cherry Tomato,7,,1,1,True
+e024,Clementine,65,,1,1,True
+e025,Clementine,65,,1,1,True
+e026,Cherry Tomato,20,,1,1,True
+e027,Cherry Tomato,24,,1,1,True
+e028,Cherry Tomato,18,,1,1,True
+e029,Cherry Tomato,22,,1,1,True
+e030,Cherry Tomato,16,,1,1,True
+e031,Cherry Tomato,20,,1,1,True
+e032,Broccoli,38,,1,1,True
+e033,Broccoli,50,,1,1,True
+e034,"Broccoli,Cauliflower","23,39",,2,2,True
+e035,"Broccoli,Cauliflower","23,35",,2,2,True
+e036,Broccoli,42,,1,1,True
+e037,"Broccoli,Cauliflower","15,39",,2,2,True
+e038,"Broccoli,Cauliflower","15,35",,2,2,True
+e039,"Broccoli,Cauliflower","27,39",,2,2,True
+e040,"Broccoli,Cauliflower","27,35",,2,2,True
+e041,Cauliflower,74,,1,1,True
+e042,"Carrot,Broccoli","86,23",,2,2,True
+e043,"Carrot,Broccoli","86,15",,2,2,True
+e044,"Carrot,Broccoli","86,27",,2,2,True
+e045,"Carrot,Cauliflower","86,39",,2,2,True
+e046,"Carrot,Cauliflower","86,35",,2,2,True
+e047,Chives,2,,1,1,True
+e048,Chives,3,,1,1,True
+e049,Mushrooms,23,,1,1,True
+e050,Mushrooms,23,,1,1,True
+e051,Mushrooms,23,,1,1,True
+e052,Mushrooms,23,,1,1,True
+e053,Garlic,7,,1,1,True
+e054,Garlic,4,,1,1,True
+e055,Garlic,3,,1,1,True
+e056,Garlic,7,,1,1,True
+e057,Garlic,11,,1,1,True
+e058,Garlic,10,,1,1,True
+e059,Garlic,14,,1,1,True
+e060,Garlic,7,,1,1,True
+e061,Garlic,10,,1,1,True
+e062,Garlic,11,,1,1,True
+e063,Potato,104,,1,1,True
+e064,Potato,104,,1,1,True
+e065,Potato,104,,1,1,True
+e066,Potato,104,,1,1,True
+e067,"Broccoli,Potato","38,104",,2,2,True
+e068,"Broccoli,Potato","38,104",,2,2,True
+e069,"Broccoli,Potato","50,104",,2,2,True
+e070,"Broccoli,Potato","50,104",,2,2,True
+e071,"Garlic,Potato","14,104",,2,2,True
+e072,"Garlic,Potato","14,104",,2,2,True
+e073,"Garlic,Potato","14,104",,2,2,True
+e074,"Garlic,Potato","11,104",,2,2,True
+e075,"Garlic,Potato","11,104",,2,2,True
+e076,"Broccoli,Garlic","38,10",,2,2,True
+e077,"Broccoli,Garlic","38,10",,2,2,True
+e078,"Broccoli,Garlic","50,10",,2,2,True
+e079,"Broccoli,Garlic","50,10",,2,2,True
+e080,"Cauliflower,Garlic","39,7",,2,2,True
+e081,"Cauliflower,Garlic","35,7",,2,2,True
+e082,"Chives,Garlic","3,3",,2,2,True
+e083,"Chives,Garlic","3,7",,2,2,True
+e084,"Chives,Garlic","3,10",,2,2,True
+e085,"Broccoli,Chives","15,2",,2,2,True
+e086,"Broccoli,Chives","15,2",,2,2,True
+e087,"Broccoli,Chives","23,2",,2,2,True
+e088,"Broccoli,Chives","23,2",,2,2,True
+e089,"Broccoli,Chives","23,5",,2,2,True
+e090,"Broccoli,Chives","15,5",,2,2,True
+e091,Jujube,8,,1,1,True
+e092,Jujube,8,,1,1,True
+e093,Jujube,8,,1,1,True
+e094,Jujube,8,,1,1,True
+e095,Jujube,16,,1,1,True
+e096,Jujube,16,,1,1,True
+e097,Raisins,30,,1,1,True
+e098,Raisins,30,,1,1,True
+e099,"Cherry Tomato,Raisins","24,30",,2,2,True
+e100,"Cherry Tomato,Raisins","24,30",,2,2,True
+e101,Clementine,35,,1,1,True
+e102,Clementine,35,,1,1,True
+e103,Clementine,35,,1,1,True
+e104,Clementine,35,,1,1,True
+e105,"Cherry Tomato,Raisins","9,17",,2,2,True
+e106,"Cherry Tomato,Raisins","9,17",,2,2,True
+e107,"Clementine,Cherry Tomato,Raisins","35,9,17",,3,3,True
+e108,"Clementine,Cherry Tomato,Raisins","35,9,17",,3,3,True
+e109,"Clementine,Cherry Tomato,Raisins","35,9,17",,3,3,True
+e110,"Broccoli,Mushrooms","15,23",,2,2,True
+e111,"Broccoli,Mushrooms","15,23",,2,2,True
+e112,"Carrot,Mushrooms","86,23",,2,2,True
+e113,"Carrot,Mushrooms","86,23",,2,2,True
+e114,"Carrot,Mushrooms","86,23",,2,2,True
+e115,"Carrot,Mushrooms","86,23",,2,2,True
+e116,"Carrot,Mushrooms","86,23",,2,2,True
+e117,"Carrot,Broccoli","86,38",,2,2,True
+e118,"Carrot,Broccoli","86,38",,2,2,True
+e119,"Carrot,Broccoli","86,50",,2,2,True
+e120,"Carrot,Broccoli","86,50",,2,2,True
+e121,"Carrot,Broccoli,Cauliflower","86,15,35",,3,3,True
+e122,"Carrot,Broccoli,Cauliflower","86,15,35",,3,3,True
+e123,"Clementine,Apple","35,110",,2,2,True
+e124,"Clementine,Apple","35,110",,2,2,True
+e125,"Clementine,Cherry Tomato,Apple","35,9,110",,3,3,True
+e126,"Clementine,Cherry Tomato,Apple","35,9,110",,3,3,True
+e127,"Clementine,Cherry Tomato,Apple","35,9,110",,3,3,True
+e128,"Clementine,Cherry Tomato,Apple","35,9,110",,3,3,True
+e129,"Clementine,Cherry Tomato,Apple","35,9,110",,3,3,True
+e130,"Clementine,Cherry Tomato,Apple","35,9,110",,3,3,True
+e131,"Clementine,Cherry Tomato,Raisins,Apple","35,9,17,110",,4,4,True
+e132,"Clementine,Cherry Tomato,Raisins,Apple","35,9,17,110",,4,4,True
+e133,"Clementine,Cherry Tomato,Jujube","35,20,8",,3,3,True
+e134,"Clementine,Cherry Tomato,Jujube","35,20,8",,3,3,True
+e135,"Clementine,Cherry Tomato,Jujube","35,22,8",,3,3,True
+e136,"Clementine,Cherry Tomato,Jujube,Raisins","35,13,8,30",,4,4,True
+e137,"Clementine,Cherry Tomato,Jujube,Raisins","35,13,8,30",,4,4,True
+e138,"Clementine,Cherry Tomato,Jujube,Raisins","35,13,8,30",,4,4,True
+e139,"Clementine,Cherry Tomato,Jujube,Raisins","35,22,8,30",,4,4,True
+e140,"Clementine,Cherry Tomato,Jujube,Raisins","35,22,8,30",,4,4,True
+e141,"Clementine,Cherry Tomato,Jujube,Raisins,Apple","35,22,8,30,110",,5,5,True
+e142,"Clementine,Cherry Tomato,Jujube,Raisins,Apple","35,22,8,30,110",,5,5,True
+e143,"Clementine,Cherry Tomato,Jujube,Raisins,Apple","35,22,8,30,110",,5,5,True
+e144,"Clementine,Cherry Tomato,Jujube,Raisins,Apple","35,22,8,30,110",,5,5,True
+e145,"Carrot,Broccoli,Cauliflower,Chives","86,38,35,2",,4,4,True
+e146,"Carrot,Broccoli,Cauliflower,Chives","86,38,35,2",,4,4,True
+e147,"Carrot,Broccoli,Cauliflower,Chives","86,38,35,2",,4,4,True
+e148,"Carrot,Broccoli,Cauliflower,Chives,Mushrooms","86,38,35,2,23",,5,5,True
+e149,"Carrot,Broccoli,Cauliflower,Chives,Mushrooms","86,38,35,2,23",,5,5,True
+e150,"Carrot,Broccoli,Cauliflower,Chives,Mushrooms","86,38,35,2,23",,5,5,True
+e151,"Carrot,Broccoli,Cauliflower,Chives,Mushrooms","86,38,35,2,23",,5,5,True
+e152,"Carrot,Chives,Apple","86,2,110",,3,3,True
+e153,"Carrot,Chives,Apple","86,2,110",,3,3,True
+e154,"Carrot,Broccoli,Chives,Apple","86,15,2,110",,4,4,True
+e155,"Carrot,Broccoli,Chives,Apple","86,38,2,110",,4,4,True
+e156,"Broccoli,Chives,Jujube,Apple","38,2,8,110",,4,4,True
+e157,"Broccoli,Chives,Jujube,Apple","38,2,16,110",,4,4,True
+e158,"Clementine,Broccoli,Chives,Jujube,Apple","35,38,2,16,110",,5,5,True
+e159,"Clementine,Broccoli,Chives,Jujube","35,38,2,16",,4,4,True
+v001,"Chicken Breast,Cantaloupe,Honeydew","287,80,168",,3,3,True
+v002,Bread,30,,1,1,True
+v003,Grapes,25,,1,1,True
+v004,Grapes,25,,1,1,True
+v005,Grapes,25,,1,1,True
+v006,Grapes,25,,1,1,True
+v007,"Bread,Cantaloupe,Grapes","30,168,41",,3,3,True
+v008,"Bread,Cantaloupe,Grapes","30,168,41",,3,3,True
+v009,"Bread,Cantaloupe,Grapes","30,168,41",,3,3,True
+v010,"Bread,Cantaloupe,Grapes","58,168,41",,3,3,True
+v011,"Bread,Cantaloupe,Grapes","58,168,41",,3,3,True
+v012,"Bread,Cantaloupe,Grapes","58,168,41",,3,3,True
+v013,Bread,30,,1,1,True
+v014,"Bread,Cantaloupe,Grapes,Strawberries","58,168,41,36",,4,4,True
+v015,"Bread,Cantaloupe,Grapes,Strawberries","58,168,41,36",,4,4,True
+v016,"Bread,Cantaloupe,Grapes,Strawberries","58,168,41,36",,4,4,True
+v017,"Bread,Cantaloupe,Grapes,Strawberries","58,168,41,36",,4,4,True
+v018,"Bread,Cantaloupe,Grapes,Strawberries","58,168,41,36",,4,4,True
+v019,"Bread,Cantaloupe,Grapes,Strawberries","58,168,41,36",,4,4,True
+v020,"Bread,Cantaloupe,Grapes,Strawberries","58,168,41,36",,4,4,True
+v021,"Bread,Cantaloupe,Grapes,Strawberries,Pineapple","58,168,41,36,65",,5,5,True
+v022,"Bread,Cantaloupe,Grapes,Strawberries,Pineapple","58,168,41,36,65",,5,5,True
+v023,"Bread,Cantaloupe,Grapes,Strawberries,Pineapple","58,168,41,36,65",,5,5,True
+v024,Bread,58,,1,1,True
+v025,"Bread,Cantaloupe,Grapes,Strawberries,Pineapple","58,168,41,36,65",,5,5,True
+v026,"Bread,Cantaloupe,Grapes,Strawberries,Pineapple,Chicken Breast","58,168,41,36,65,125",,6,6,True
+v027,"Bread,Cantaloupe,Grapes,Strawberries,Pineapple,Chicken Breast","58,168,41,36,65,125",,6,6,True
+v028,"Bread,Cantaloupe,Grapes,Strawberries,Pineapple,Chicken Breast","58,168,41,36,65,125",,6,6,True
+v029,"Bread,Cantaloupe,Grapes,Strawberries,Pineapple,Chicken Breast,Honeydew","58,168,41,36,65,125,80",,7,7,True
+v030,"Bread,Cantaloupe,Grapes,Strawberries,Pineapple,Chicken Breast,Honeydew","58,168,41,36,65,125,80",,7,7,True
+v031,"Bread,Cantaloupe,Grapes,Strawberries,Pineapple,Chicken Breast,Honeydew","58,168,41,36,65,125,80",,7,7,True
+v032,"Bread,Grapes,Chicken Breast","58,41,287",,3,3,True
+v033,"Bread,Grapes,Chicken Breast","58,41,287",,3,3,True
+v034,"Bread,Grapes,Chicken Breast,Honeydew","58,41,287,80",,4,4,True
+v035,Bread,58,,1,1,True
+v036,"Bread,Grapes,Chicken Breast,Honeydew","58,41,287,80",,4,4,True
+v037,"Bread,Grapes,Chicken Breast,Honeydew","58,41,287,80",,4,4,True
+v038,"Bread,Grapes,Chicken Breast,Honeydew","58,41,287,80",,4,4,True
+v039,"Bread,Grapes,Chicken Breast,Honeydew","58,41,287,80",,4,4,True
+v040,"Bread,Grapes,Chicken Breast,Honeydew","58,41,287,80",,4,4,True
+v041,"Bread,Grapes,Chicken Breast,Honeydew","58,41,287,80",,4,4,True
+v042,"Bread,Grapes,Chicken Breast,Honeydew","58,41,287,80",,4,4,True
+v043,Chicken Breast,125,,1,1,True
+v044,Chicken Breast,125,,1,1,True
+v045,Chicken Breast,125,,1,1,True
+v046,Bread,58,,1,1,True
+v047,Chicken Breast,125,,1,1,True
+v048,Chicken Breast,125,,1,1,True
+v049,Chicken Breast,125,,1,1,True
+v050,Chicken Breast,125,,1,1,True
+v051,Chicken Breast,125,,1,1,True
+v052,Chicken Breast,287,,1,1,True
+v053,Chicken Breast,287,,1,1,True
+v054,Chicken Breast,287,,1,1,True
+v055,Chicken Breast,287,,1,1,True
+v056,Chicken Breast,287,,1,1,True
+v057,Bread,58,,1,1,True
+v058,Chicken Breast,287,,1,1,True
+v059,Chicken Breast,287,,1,1,True
+v060,Chicken Breast,287,,1,1,True
+v061,Chicken Breast,287,,1,1,True
+v062,Chicken Breast,287,,1,1,True
+v063,"Chicken Breast,Blueberries,Strawberries","287,21,36",,3,3,True
+v064,"Chicken Breast,Blueberries,Strawberries","287,21,36",,3,3,True
+v065,"Chicken Breast,Blueberries,Strawberries,Grapes","287,21,36,41",,4,4,True
+v066,"Chicken Breast,Blueberries,Strawberries,Grapes","287,21,36,41",,4,4,True
+v067,"Chicken Breast,Blueberries,Strawberries,Grapes","287,21,36,41",,4,4,True
+v068,Blueberries,10,,1,1,True
+v069,"Chicken Breast,Blueberries,Strawberries,Grapes,Bread","287,21,36,41,30",,5,5,True
+v070,"Chicken Breast,Blueberries,Strawberries,Grapes,Bread,Pineapple","287,21,36,41,30,65",,6,6,True
+v071,"Chicken Breast,Blueberries,Strawberries,Grapes,Bread,Pineapple","287,21,36,41,30,65",,6,6,True
+v072,"Chicken Breast,Blueberries,Strawberries,Grapes,Bread,Pineapple","287,21,36,41,30,65",,6,6,True
+v073,"Chicken Breast,Blueberries,Strawberries,Grapes,Bread,Pineapple","287,21,36,41,58,65",,6,6,True
+v074,"Chicken Breast,Blueberries,Strawberries,Grapes,Bread,Pineapple","287,21,36,41,58,65",,6,6,True
+v075,"Chicken Breast,Blueberries,Strawberries,Grapes,Bread,Pineapple","287,21,36,41,58,65",,6,6,True
+v076,"Chicken Breast,Blueberries,Strawberries,Honeydew,Bread,Pineapple       ","162,21,36,80,58,65",,6,6,True
+v077,"Chicken Breast,Blueberries,Strawberries,Honeydew,Bread,Pineapple       ","162,21,36,80,58,65",,6,6,True
+v078,"Chicken Breast,Strawberries,Honeydew,Bread","162,36,80,58",,4,4,True
+v079,Blueberries,10,,1,1,True
+v080,"Chicken Breast,Strawberries,Honeydew,Bread","162,36,80,58",,4,4,True
+v081,"Chicken Breast,Honeydew,Bread","162,80,58",,3,3,True
+v082,"Chicken Breast,Strawberries,Bread","162,36,58",,3,3,True
+v083,"Chicken Breast,Strawberries","162,36",,2,2,True
+v084,"Chicken Breast,Strawberries","162,36",,2,2,True
+v085,"Chicken Breast,Strawberries,Bread","162,20,30",,3,3,True
+v086,"Chicken Breast,Strawberries,Bread","162,20,30",,3,3,True
+v087,"Chicken Breast,Strawberries,Bread","162,20,30",,3,3,True
+v088,"Chicken Breast,Strawberries,Bread,Pineapple","162,20,30,65",,4,4,True
+v089,"Chicken Breast,Strawberries,Bread,Pineapple","162,20,30,65",,4,4,True
+v090,Blueberries,10,,1,1,True
+v091,"Chicken Breast,Strawberries,Bread,Pineapple","162,20,30,65",,4,4,True
+v092,"Chicken Breast,Strawberries,Bread,Pineapple","162,20,30,65",,4,4,True
+v093,"Chicken Breast,Strawberries,Bread,Pineapple","162,20,30,65",,4,4,True
+v094,"Chicken Breast,Strawberries,Bread,Pineapple","162,20,30,65",,4,4,True
+v095,"Chicken Breast,Strawberries,Bread,Pineapple","162,20,30,65",,4,4,True
+v096,"Chicken Breast,Strawberries,Bread,Pineapple","162,20,30,65",,4,4,True
+v097,"Chicken Breast,Strawberries,Bread,Pineapple","162,20,30,65",,4,4,True
+v098,"Chicken Breast,Strawberries,Bread,Cantaloupe","162,20,30,56",,4,4,True
+v099,"Chicken Breast,Strawberries,Bread,Cantaloupe","162,20,30,56",,4,4,True
+v100,"Chicken Breast,Strawberries,Bread,Cantaloupe,Honeydew","162,20,30,56,80",,5,5,True
+v101,Blueberries,10,,1,1,True
+v102,"Chicken Breast,Strawberries,Bread,Cantaloupe,Honeydew","162,20,30,56,80",,5,5,True
+v103,"Chicken Breast,Strawberries,Bread,Cantaloupe,Honeydew","162,20,30,56,80",,5,5,True
+v104,"Chicken Breast,Strawberries,Bread,Cantaloupe,Honeydew","287,20,30,56,80",,5,5,True
+v105,"Chicken Breast,Strawberries,Bread,Cantaloupe,Honeydew","287,20,30,56,80",,5,5,True
+v106,"Chicken Breast,Strawberries,Bread,Cantaloupe,Honeydew","287,20,30,56,80",,5,5,True
+v107,"Chicken Breast,Strawberries,Bread,Cantaloupe,Honeydew","287,20,58,56,80",,5,5,True
+v108,"Chicken Breast,Strawberries,Bread,Cantaloupe,Honeydew","287,20,58,56,80",,5,5,True
+v109,"Chicken Breast,Strawberries,Bread,Cantaloupe,Honeydew","287,20,58,56,80",,5,5,True
+v110,"Chicken Breast,Cantaloupe,Honeydew","287,56,80",,3,3,True
+v111,Bread,30,,1,1,True
+v112,Blueberries,10,,1,1,True
+v113,"Chicken Breast,Cantaloupe,Honeydew","287,56,80",,3,3,True
+v114,"Chicken Breast,Cantaloupe,Honeydew","287,56,80",,3,3,True
+v115,"Chicken Breast,Cantaloupe,Honeydew","287,56,80",,3,3,True
+v116,"Chicken Breast,Cantaloupe,Honeydew","287,56,80",,3,3,True
+v117,"Chicken Breast,Cantaloupe,Honeydew","287,56,80",,3,3,True
+v118,"Chicken Breast,Cantaloupe,Honeydew","287,56,80",,3,3,True
+v119,"Chicken Breast,Cantaloupe,Honeydew","287,56,80",,3,3,True
+v120,"Chicken Breast,Cantaloupe,Honeydew","287,56,80",,3,3,True
+v121,"Chicken Breast,Cantaloupe,Honeydew","287,56,80",,3,3,True
+v122,"Chicken Breast,Cantaloupe,Honeydew","287,56,80",,3,3,True
+v123,Blueberries,21,,1,1,True
+v124,Blueberries,21,,1,1,True
+v125,Blueberries,21,,1,1,True
+v126,Blueberries,21,,1,1,True
+v127,Strawberries,20,,1,1,True
+v128,Strawberries,20,,1,1,True
+v129,Strawberries,20,,1,1,True
+v130,Strawberries,36,,1,1,True
+v131,Strawberries,36,,1,1,True
+v132,Bread,58,,1,1,True
+v133,Strawberries,36,,1,1,True
+v134,Strawberries,36,,1,1,True
+v135,Strawberries,36,,1,1,True
+v136,Strawberries,36,,1,1,True
+v137,Strawberries,36,,1,1,True
+v138,Cantaloupe,26,,1,1,True
+v139,Cantaloupe,26,,1,1,True
+v140,Cantaloupe,26,,1,1,True
+v141,Cantaloupe,26,,1,1,True
+v142,Cantaloupe,26,,1,1,True
+v143,Bread,58,,1,1,True
+v144,Cantaloupe,26,,1,1,True
+v145,Cantaloupe,76,,1,1,True
+v146,Cantaloupe,76,,1,1,True
+v147,Cantaloupe,76,,1,1,True
+v148,Cantaloupe,76,,1,1,True
+v149,Cantaloupe,76,,1,1,True
+v150,Cantaloupe,76,,1,1,True
+v151,Cantaloupe,76,,1,1,True
+v152,Cantaloupe,168,,1,1,True
+v153,Cantaloupe,168,,1,1,True
+v154,Bread,30,,1,1,True
+v155,Cantaloupe,168,,1,1,True
+v156,Cantaloupe,168,,1,1,True
+v157,Cantaloupe,168,,1,1,True
+v158,Cantaloupe,168,,1,1,True
+v159,Cantaloupe,168,,1,1,True
+v160,Cantaloupe,168,,1,1,True
+v161,"Cantaloupe,Blueberries","168,21",,2,2,True
+v162,"Cantaloupe,Blueberries,Bread","168,21,30",,3,3,True
+v163,"Cantaloupe,Blueberries,Bread","168,21,30",,3,3,True
+v164,"Cantaloupe,Blueberries,Bread","168,21,30",,3,3,True
+v165,Bread,58,,1,1,True
+v166,"Cantaloupe,Blueberries,Bread","168,21,58",,3,3,True
+v167,"Cantaloupe,Blueberries,Bread","168,21,58",,3,3,True
+v168,"Cantaloupe,Blueberries,Bread","168,21,58",,3,3,True
+v169,"Cantaloupe,Blueberries,Bread,Strawberries","168,21,58,36",,4,4,True
+v170,"Cantaloupe,Blueberries,Bread,Strawberries","168,21,58,36",,4,4,True
+v171,"Cantaloupe,Blueberries,Bread,Strawberries","168,21,58,36",,4,4,True
+v172,"Cantaloupe,Blueberries,Bread,Strawberries","168,21,58,36",,4,4,True
+v173,"Cantaloupe,Blueberries,Bread,Strawberries","168,21,58,36",,4,4,True
+v174,"Cantaloupe,Blueberries,Bread,Strawberries","168,21,58,36",,4,4,True
+v175,"Cantaloupe,Blueberries,Bread,Strawberries","168,21,58,36",,4,4,True
+v176,Bread,58,,1,1,True
+v177,"Cantaloupe,Blueberries,Bread,Strawberries","168,21,58,36",,4,4,True
+v178,"Cantaloupe,Blueberries,Bread,Strawberries","168,21,58,36",,4,4,True
+v179,Honeydew,56,,1,1,True
+v180,Honeydew,56,,1,1,True
+v181,Honeydew,56,,1,1,True
+v182,Honeydew,56,,1,1,True
+v183,Honeydew,56,,1,1,True
+v184,Honeydew,56,,1,1,True
+v185,Honeydew,56,,1,1,True
+v186,Pineapple,65,,1,1,True
+v187,Bread,58,,1,1,True
+v188,Pineapple,65,,1,1,True
+v189,Pineapple,65,,1,1,True
+v190,Pineapple,65,,1,1,True
+v191,Pineapple,65,,1,1,True
+v192,Pineapple,65,,1,1,True
+v193,Pineapple,43,,1,1,True
+v194,Pineapple,43,,1,1,True
+v195,Pineapple,43,,1,1,True
+v196,Pineapple,43,,1,1,True
+v197,Pineapple,43,,1,1,True
+v198,Bread,58,,1,1,True
+v199,Grapes,41,,1,1,True
+v200,Grapes,41,,1,1,True
+v201,Grapes,41,,1,1,True
+v202,Grapes,41,,1,1,True
+v203,Grapes,41,,1,1,True
+v204,Grapes,41,,1,1,True
+v205,Grapes,41,,1,1,True
+v206,Grapes,25,,1,1,True
+v207,Grapes,25,,1,1,True
+v208,Grapes,25,,1,1,True
+e160,Egg,38,,1,1,True
+e161,Egg,38,,1,1,True
+e162,Egg,38,,1,1,True
+e163,Egg,38,,1,1,True
+e164,Egg,40,,1,1,True
+e165,Egg,40,,1,1,True
+e166,Egg,40,,1,1,True
+e167,Egg,40,,1,1,True
+e168,Egg,37,,1,1,True
+e169,Egg,37,,1,1,True
+e170,Egg,36,,1,1,True
+e171,Egg,36,,1,1,True
+y001,Apple,211,,1,1,True
+y002,Apple ,186,,1,1,True
+y003,Apple,397,,1,1,True
+y004,Apple,397,,1,1,True
+y005,Apple,186,,1,1,True
+y006,Banana,212,,1,1,True
+y007,"Banana,Apple","212,186",,2,2,True
+y008,"Banana,Apple,Orange","212,186,182",,3,3,True
+y009,"Banana,Apple","212,397",,2,2,True
+y010,"Banana,Apple","212,397",,2,2,True
+y011,"Banana,Apple","212,397",,2,2,True
+y012,"Banana,Apple,Orange","212,397,182",,3,3,True
+y013,Orange,231,,1,1,True
+y014,"Apple,Orange","231,211",,2,2,True
+y015,"Banana,Apple,Orange","212,397,231",,3,3,True
+y016,"Orange,Apple,Garlic","231,211,45",,3,3,True
+y017,"Banana,Apple,Orange","212,397,182",,3,3,True
+y018,"Banana,Apple,Orange,Garlic","212,211,182,45",,4,4,True
+y019,"Apple,Orange,Garlic","211,231,87",,3,3,True
+y020,"Banana,Apple,Orange,Garlic","212,211,182,87",,4,4,True
+y021,Orange,49,,1,1,True
+y022,Orange,49,,1,1,True
+y023,Orange,49,,1,1,True
+y024,Egg,59,,1,1,True
+y025,Egg,117,,1,1,True
+y026,"Egg,Banana","117,212",,2,2,True
+y027,"Egg,Banana,Garlic","117,212,41",,3,3,True
+y028,"Banana,Apple,Egg","212,186,117",,3,3,True
+y029,"Banana,Egg,Orange","212,117,182",,3,3,True
+y030,"Carrot,Egg","147,117",,2,2,True
+y031,"Carrot,Egg,Potato","147,117,270",,3,3,True
+y032,"Banana,Carrot,Egg,Potato","212,147,58,270",,4,4,True
+y033,"Banana,Carrot,Egg,Potato","212,147,58,270",,4,4,True
+y034,"Carrot,Egg","147,58",,2,2,True
+y035,"Carrot,Egg,Garlic","147,58,41",,3,3,True
+y036,"Carrot,Egg,Orange","147,58,182",,3,3,True
+y037,"Carrot,Egg,Potato","147,58,270",,3,3,True
+y038,"Carrot,Egg,Onion","147,58,205",,3,3,True
+y039,"Carrot,Egg,Potato,Onion","147,58,270,205",,4,4,True
+y040,"Carrot,Egg,Orange,Onion","147,58,182,205",,4,4,True
+y041,"Apple,Carrot,Egg,Onion","211,147,58,205",,4,4,True
+y042,"Apple,Carrot,Egg,Onion","211,147,58,205",,4,4,True
+y043,"Apple,Carrot,Egg,Onion,Orange","211,147,58,205,49",,5,5,True
+y044,"Apple,Carrot,Egg,Onion,Orange","211,147,58,205,49",,5,5,True
+y045,"Apple,Carrot,Egg,Onion,Orange","211,147,58,205,231",,5,5,True
+y046,"Apple,Carrot,Egg,Onion,Orange","211,147,58,205,182",,5,5,True
+y047,"Apple,Carrot,Egg,Onion,Orange,Potato","211,147,58,205,182,270",,6,6,True
+y048,"Banana,Apple,Carrot,Egg,Onion,Orange,Garlic","212,211,147,58,205,182,41",,7,7,True
+y049,"Banana,Apple,Carrot,Egg,Onion,Orange,Garlic,Potato","212,211,147,117,205,182,87,270",,8,8,True
+y050,"Banana,Apple,Carrot,Egg,Onion,Garlic","212,211,147,117,205,87",,6,6,True
+y051,"Banana,Apple,Carrot,Egg,Onion,Garlic","212,211,147,117,205,87",,6,6,True
+y052,Cherry Tomato,11,,1,1,True
+y053,Cherry Tomato,24,,1,1,True
+y054,Cherry Tomato,13,,1,1,True
+y055,Cherry Tomato,49,,1,1,True
+y056,Cherry Tomato,15,,1,1,True
+y057,Cherry Tomato,78,,1,1,True
+y058,Cherry Tomato,78,,1,1,True
+y059,Cherry Tomato,78,,1,1,True
+y060,Cherry Tomato,78,,1,1,True
+y061,Cherry Tomato,78,,1,1,True
+y062,Cherry Tomato,78,,1,1,True
+y063,Cherry Tomato,78,,1,1,True
+y064,Cherry Tomato,78,,1,1,True
+y065,"Cherry Tomato,Pear","78,276",,2,2,True
+y066,"Cherry Tomato,Pear","78,276",,2,2,True
+y067,"Cherry Tomato,Pear","78,276",,2,2,True
+y068,"Cherry Tomato,Pear","78,276",,2,2,True
+y069,"Cherry Tomato,Pear","78,276",,2,2,True
+y070,"Cherry Tomato,Pear","78,276",,2,2,True
+y071,Grapes,140,,1,1,True
+y072,Grapes,140,,1,1,True
+y073,Grapes,140,,1,1,True
+y074,Grapes,140,,1,1,True
+y075,"Cherry Tomato,Grapes","71,140",,2,2,True
+y076,"Cherry Tomato,Grapes","71,140",,2,2,True
+y077,"Cherry Tomato,Grapes","71,140",,2,2,True
+y078,"Cherry Tomato,Grapes,Blueberries","71,140,22",,3,3,True
+y079,"Cherry Tomato,Grapes,Blueberries","71,140,22",,3,3,True
+y080,"Cherry Tomato,Grapes,Blueberries","71,140,22",,3,3,True
+y081,"Cherry Tomato,Grapes,Blueberries","71,140,22",,3,3,True
+y082,"Cherry Tomato,Grapes,Blueberries","71,140,22",,3,3,True
+y083,"Cherry Tomato,Grapes,Blueberries","71,140,22",,3,3,True
+y084,"Cherry Tomato,Grapes,Blueberries","71,140,22",,3,3,True
+y085,"Cherry Tomato,Grapes,Blueberries","71,140,22",,3,3,True
+y086,"Cherry Tomato,Grapes,Blueberries","71,140,22",,3,3,True
+y087,"Cherry Tomato,Grapes,Blueberries","71,140,22",,3,3,True
+y088,"Cherry Tomato,Grapes,Blueberries","71,140,22",,3,3,True
+y089,"Cherry Tomato,Grapes,Blueberries","71,140,22",,3,3,True
+y090,"Cherry Tomato,Grapes,Blueberries","71,140,22",,3,3,True
+y091,"Cherry Tomato,Grapes,Blueberries","71,140,46",,3,3,True
+y092,"Cherry Tomato,Grapes,Blueberries","71,140,46",,3,3,True
+y093,"Cherry Tomato,Grapes,Blueberries","71,140,46",,3,3,True
+y094,"Cherry Tomato,Grapes,Blueberries","71,140,46",,3,3,True
+y095,"Cherry Tomato,Grapes,Blueberries","71,140,46",,3,3,True
+y096,"Cherry Tomato,Grapes,Blueberries","71,140,46",,3,3,True
+y097,"Cherry Tomato,Grapes,Blueberries","71,140,46",,3,3,True
+y098,"Cherry Tomato,Grapes,Blueberries","103,140,46",,3,3,True
+y099,"Cherry Tomato,Grapes,Blueberries","103,140,46",,3,3,True
+y100,"Cherry Tomato,Grapes,Blueberries","103,140,46",,3,3,True
+y101,"Cherry Tomato,Grapes,Blueberries","103,140,46",,3,3,True
+y102,"Cherry Tomato,Grapes,Blueberries","103,140,46",,3,3,True
+y103,"Blueberries,Pear","46,300",,2,2,True
+y104,"Blueberries,Pear","46,300",,2,2,True
+y105,"Blueberries,Pear","46,300",,2,2,True
+y106,Pear,300,,1,1,True
+y107,Pear,300,,1,1,True
+y108,Pear,576,,1,1,True
+y109,Pear,60,,1,1,True
+y110,Pear,60,,1,1,True
+y111,Pear,240,,1,1,True
+y112,Pear,240,,1,1,True
+y113,Pear,133,,1,1,True
+y114,Pear,133,,1,1,True
+y115,Pear,51,,1,1,True
+y116,Pear,180,,1,1,True
+y117,Pear,180,,1,1,True
+y118,Pear,180,,1,1,True
+y119,Pear,180,,1,1,True
+y120,Pear,180,,1,1,True
+y121,Pear,180,,1,1,True
+y122,Pear,180,,1,1,True
+y123,Pear,180,,1,1,True
+y124,Pear,180,,1,1,True
+y125,Pear,180,,1,1,True
+y126,"Pear,Grapes","180,95",,2,2,True
+y127,"Pear,Grapes","180,95",,2,2,True
+y128,"Pear,Grapes,Cherry Tomato","180,95,57",,3,3,True
+y129,"Pear,Grapes,Cherry Tomato","180,95,57",,3,3,True
+y130,Sweet Potato,76,,1,1,True
+y131,Sweet Potato,126,,1,1,True
+y132,Sweet Potato,126,,1,1,True
+y133,Sweet Potato,201,,1,1,True
+y134,Sweet Potato,201,,1,1,True
+y135,Sweet Potato,201,,1,1,True
+y136,Sweet Potato,201,,1,1,True
+y137,Sweet Potato,201,,1,1,True
+y138,Sweet Potato,93,,1,1,True
+y139,Sweet Potato,93,,1,1,True
+y140,Sweet Potato,296,,1,1,True
+y141,Sweet Potato,296,,1,1,True
+y142,"Sweet Potato,Egg","124,53",,2,2,True
+y143,"Sweet Potato,Egg","124,53",,2,2,True
+y144,"Sweet Potato,Egg","222,53",,2,2,True
+y145,"Sweet Potato,Egg","222,53",,2,2,True
+y146,"Sweet Potato,Egg","222,53",,2,2,True
+y147,"Sweet Potato,Egg","222,53",,2,2,True
+y148,"Sweet Potato,Egg","222,53",,2,2,True
+y149,"Sweet Potato,Egg","222,109",,2,2,True
+y150,"Sweet Potato,Egg","222,109",,2,2,True
+y151,"Sweet Potato,Egg","222,109",,2,2,True
+y152,"Sweet Potato,Egg","222,109",,2,2,True
+y153,"Sweet Potato,Egg","222,109",,2,2,True
+y154,"Sweet Potato,Egg,Cherry Tomato","222,109,52",,3,3,True
+y155,"Sweet Potato,Egg,Cherry Tomato","222,109,52",,3,3,True
+y156,"Sweet Potato,Egg,Cherry Tomato","222,109,52",,3,3,True
+y157,Sweet Potato,38,,1,1,True
+y158,Sweet Potato,55,,1,1,True
+y159,Sweet Potato,93,,1,1,True
+y160,Sweet Potato,93,,1,1,True
+y161,Sweet Potato,93,,1,1,True
+y162,Sweet Potato,93,,1,1,True
+y163,Sweet Potato,93,,1,1,True
+y164,Sweet Potato,93,,1,1,True
+y165,Sweet Potato,221,,1,1,True
+y166,Sweet Potato,221,,1,1,True
+y167,Sweet Potato,221,,1,1,True
+y168,Sweet Potato,221,,1,1,True
+y169,Sweet Potato,221,,1,1,True
+y170,Sweet Potato,221,,1,1,True
+y171,Sweet Potato,221,,1,1,True
+y172,Sweet Potato,221,,1,1,True
+y173,Sweet Potato,162,,1,1,True
+y174,Sweet Potato,162,,1,1,True
+y175,Sweet Potato,162,,1,1,True
+y176,Sweet Potato,162,,1,1,True
+y177,Sweet Potato,162,,1,1,True
+y178,Sweet Potato,162,,1,1,True
+y179,Sweet Potato,162,,1,1,True
+y180,Sweet Potato,106,,1,1,True
+y181,Sweet Potato,106,,1,1,True
+y182,Sweet Potato,106,,1,1,True
+y183,"Sweet Potato,Egg","106,53",,2,2,True
+y184,"Sweet Potato,Egg","106,109",,2,2,True
+y185,"Sweet Potato,Egg","106,109",,2,2,True
+y186,"Sweet Potato,Egg","162,109",,2,2,True
+y187,"Sweet Potato,Egg","221,109",,2,2,True
+y188,"Sweet Potato,Egg","221,109",,2,2,True
+y189,"Sweet Potato,Egg","221,109",,2,2,True
+y190,Sweet Potato,68,,1,1,True
+y191,Sweet Potato,68,,1,1,True
+y192,Sweet Potato,68,,1,1,True
+y193,Sweet Potato,68,,1,1,True
+y194,Sweet Potato,68,,1,1,True
+v209,Strawberries,36,,1,1,True
+v210,Strawberries,36,,1,1,True
+v211,Strawberries,36,,1,1,True
+v212,Blueberries,8,,1,1,True
+v213,Blueberries,8,,1,1,True
+v214,Blueberries,8,,1,1,True
+v215,Blueberries,8,,1,1,True
+v216,Blueberries,8,,1,1,True
+v217,Blueberries,8,,1,1,True
+v218,Blueberries,13,,1,1,True
+v219,Blueberries,13,,1,1,True
+v220,Blueberries,13,,1,1,True
+v221,Blueberries,23,,1,1,True
+v222,Blueberries,23,,1,1,True
+v223,Blueberries,23,,1,1,True
+v224,Blueberries,23,,1,1,True
+v225,Blueberries,23,,1,1,True
+v226,Blueberries,23,,1,1,True
+v227,Blueberries,23,,1,1,True
+v228,"Blueberries,Strawberries","23,36",,2,2,True
+v229,"Blueberries,Strawberries","23,36",,2,2,True
+v230,"Blueberries,Strawberries","23,36",,2,2,True
+v231,"Blueberries,Strawberries","23,36",,2,2,True
+v232,"Blueberries,Strawberries","23,36",,2,2,True
+v233,"Blueberries,Strawberries","23,36",,2,2,True
+v234,"Blueberries,Strawberries","23,36",,2,2,True
+v235,"Blueberries,Strawberries","23,36",,2,2,True
+v236,"Blueberries,Strawberries","23,36",,2,2,True
+v237,"Blueberries,Strawberries","23,36",,2,2,True
+v238,"Blueberries,Strawberries","23,36",,2,2,True
+v239,"Blueberries,Strawberries","13,36",,2,2,True
+v240,"Blueberries,Strawberries","13,36",,2,2,True
+v241,"Blueberries,Strawberries","13,36",,2,2,True
+v242,"Blueberries,Strawberries","13,36",,2,2,True
+v243,"Blueberries,Strawberries","13,36",,2,2,True
+v244,"Blueberries,Strawberries","13,36",,2,2,True
+v245,"Blueberries,Strawberries","8,36",,2,2,True
+v246,"Blueberries,Strawberries","8,36",,2,2,True
+v247,"Blueberries,Strawberries","8,36",,2,2,True
+v248,"Blueberries,Strawberries","8,36",,2,2,True
+v249,"Blueberries,Strawberries","8,36",,2,2,True
+v250,"Blueberries,Strawberries","8,36",,2,2,True
+v251,"Blueberries,Strawberries","8,36",,2,2,True
+v252,Pineapple,30,,1,1,True
+v253,Pineapple,30,,1,1,True
+v254,Pineapple,30,,1,1,True
+v255,Pineapple,30,,1,1,True
+v256,Pineapple,30,,1,1,True
+v257,Pineapple,30,,1,1,True
+v258,Pineapple,30,,1,1,True
+v259,Pineapple,30,,1,1,True
+v260,Pineapple,30,,1,1,True
+v261,Pineapple,30,,1,1,True
+v262,Pineapple,30,,1,1,True
+v263,Pineapple,43,,1,1,True
+v264,Pineapple,43,,1,1,True
+v265,Pineapple,43,,1,1,True
+v266,Pineapple,43,,1,1,True
+v267,Pineapple,43,,1,1,True
+v268,Pineapple,43,,1,1,True
+v269,Pineapple,43,,1,1,True
+v270,Pineapple,43,,1,1,True
+v271,Pineapple,43,,1,1,True
+v272,Pineapple,74,,1,1,True
+v273,Pineapple,74,,1,1,True
+v274,Pineapple,74,,1,1,True
+v275,Pineapple,74,,1,1,True
+v276,Pineapple,74,,1,1,True
+v277,Pineapple,74,,1,1,True
+v278,Pineapple,74,,1,1,True
+v279,Pineapple,74,,1,1,True
+v280,Pineapple,74,,1,1,True
+v281,"Pineapple,Strawberries","74,36",,2,2,True
+v282,"Pineapple,Strawberries","74,36",,2,2,True
+v283,"Pineapple,Strawberries","74,36",,2,2,True
+v284,"Pineapple,Strawberries","74,36",,2,2,True
+v285,"Pineapple,Strawberries","74,36",,2,2,True
+v286,"Pineapple,Strawberries","74,36",,2,2,True
+v287,"Pineapple,Strawberries","74,36",,2,2,True
+v288,"Pineapple,Strawberries","74,36",,2,2,True
+v289,"Pineapple,Strawberries","74,36",,2,2,True
+v290,"Pineapple,Strawberries","74,36",,2,2,True
+v291,"Pineapple,Strawberries","43,36",,2,2,True
+v292,"Pineapple,Strawberries","43,36",,2,2,True
+v293,"Pineapple,Strawberries","43,36",,2,2,True
+v294,"Pineapple,Strawberries","43,36",,2,2,True
+v295,"Pineapple,Strawberries","43,36",,2,2,True
+v296,"Pineapple,Strawberries","43,36",,2,2,True
+v297,"Pineapple,Strawberries","43,36",,2,2,True
+v298,"Pineapple,Strawberries","30,36",,2,2,True
+v299,"Pineapple,Strawberries","30,36",,2,2,True
+v300,"Pineapple,Strawberries","30,36",,2,2,True
+v301,"Pineapple,Strawberries","30,36",,2,2,True
+v302,"Pineapple,Strawberries","30,36",,2,2,True
+v303,"Pineapple,Strawberries,Blueberries","30,36,8",,3,3,True
+v304,"Pineapple,Strawberries,Blueberries","30,36,8",,3,3,True
+v305,"Pineapple,Strawberries,Blueberries","30,36,8",,3,3,True
+v306,"Pineapple,Strawberries,Blueberries","30,36,8",,3,3,True
+v307,"Pineapple,Strawberries,Blueberries","30,36,8",,3,3,True
+v308,"Pineapple,Strawberries,Blueberries","30,36,8",,3,3,True
+v309,"Pineapple,Strawberries,Blueberries","30,36,8",,3,3,True
+v310,"Pineapple,Strawberries,Blueberries","43,36,8",,3,3,True
+v311,"Pineapple,Strawberries,Blueberries","43,36,8",,3,3,True
+v312,"Pineapple,Strawberries,Blueberries","43,36,8",,3,3,True
+v313,"Pineapple,Strawberries,Blueberries","74,36,8",,3,3,True
+v314,"Pineapple,Strawberries,Blueberries","74,36,8",,3,3,True
+v315,"Pineapple,Strawberries,Blueberries","74,36,8",,3,3,True
+v316,"Pineapple,Strawberries,Blueberries","74,36,8",,3,3,True
+v317,"Pineapple,Strawberries,Blueberries","74,36,13",,3,3,True
+v318,"Pineapple,Strawberries,Blueberries","74,36,13",,3,3,True
+v319,"Pineapple,Strawberries,Blueberries","74,36,13",,3,3,True
+v320,"Pineapple,Strawberries,Blueberries","74,36,13",,3,3,True
+v321,"Pineapple,Strawberries,Blueberries","74,36,13",,3,3,True
+v322,"Pineapple,Strawberries,Blueberries","74,36,13",,3,3,True
+v323,"Pineapple,Strawberries,Blueberries","74,36,13",,3,3,True
+v324,"Pineapple,Strawberries,Blueberries","74,36,13",,3,3,True
+v325,"Pineapple,Strawberries,Blueberries","74,36,13",,3,3,True
+v326,"Pineapple,Strawberries,Blueberries","74,36,13",,3,3,True
+v327,"Pineapple,Strawberries,Blueberries","74,36,13",,3,3,True
+v328,"Pineapple,Strawberries,Blueberries","74,36,23",,3,3,True
+v329,"Pineapple,Strawberries,Blueberries","74,36,23",,3,3,True
+v330,"Pineapple,Strawberries,Blueberries","74,36,23",,3,3,True
+v331,"Pineapple,Strawberries,Blueberries","74,36,23",,3,3,True
+v332,"Pineapple,Strawberries,Blueberries","74,36,23",,3,3,True
+v333,"Pineapple,Strawberries,Blueberries","74,36,23",,3,3,True
+v334,"Pineapple,Strawberries,Blueberries","74,36,23",,3,3,True
+v335,"Pineapple,Strawberries,Blueberries","74,36,23",,3,3,True
+v336,"Pineapple,Strawberries,Blueberries","74,36,23",,3,3,True
+v337,"Pineapple,Strawberries,Blueberries","74,36,23",,3,3,True
+v338,"Pineapple,Strawberries,Blueberries","74,36,23",,3,3,True
+v339,"Pineapple,Strawberries,Blueberries","74,36,23",,3,3,True
+v340,Chicken Breast,119,,1,1,True
+v341,Chicken Breast,119,,1,1,True
+v342,Chicken Breast,119,,1,1,True
+v343,Chicken Breast,119,,1,1,True
+v344,"Chicken Breast,Pineapple","119,30",,2,2,True
+v345,"Chicken Breast,Pineapple","119,30",,2,2,True
+v346,"Chicken Breast,Pineapple","119,30",,2,2,True
+v347,"Chicken Breast,Pineapple","119,30",,2,2,True
+v348,"Chicken Breast,Pineapple","119,30",,2,2,True
+v349,"Chicken Breast,Pineapple","119,30",,2,2,True
+v350,"Chicken Breast,Pineapple","119,30",,2,2,True
+v351,"Chicken Breast,Pineapple","119,43",,2,2,True
+v352,"Chicken Breast,Pineapple","119,43",,2,2,True
+v353,"Chicken Breast,Pineapple","119,43",,2,2,True
+v354,"Chicken Breast,Pineapple","119,74",,2,2,True
+v355,"Chicken Breast,Pineapple,Blueberries","119,74,23",,3,3,True
+v356,"Chicken Breast,Pineapple,Blueberries","119,74,23",,3,3,True
+v357,"Chicken Breast,Pineapple,Blueberries","119,74,23",,3,3,True
+v358,"Chicken Breast,Pineapple,Blueberries","119,74,23",,3,3,True
+v359,"Chicken Breast,Pineapple,Blueberries","119,74,23",,3,3,True
+v360,"Chicken Breast,Pineapple,Blueberries,Honeydew","119,74,23,41",,4,4,True
+v361,"Chicken Breast,Pineapple,Blueberries,Honeydew","119,74,23,41",,4,4,True
+v362,"Chicken Breast,Pineapple,Blueberries,Honeydew","119,74,23,41",,4,4,True
+v363,"Chicken Breast,Pineapple,Blueberries,Honeydew","119,74,23,77",,4,4,True
+v364,"Chicken Breast,Pineapple,Blueberries,Honeydew","119,74,23,77",,4,4,True
+v365,"Chicken Breast,Pineapple,Blueberries,Honeydew","119,43,23,77",,4,4,True
+v366,"Chicken Breast,Pineapple,Blueberries,Honeydew","119,43,23,77",,4,4,True
+v367,"Chicken Breast,Pineapple,Blueberries,Honeydew","119,43,23,77",,4,4,True
+v368,"Chicken Breast,Pineapple,Blueberries,Honeydew","119,43,23,77",,4,4,True
+v369,"Chicken Breast,Pineapple,Blueberries,Honeydew","119,43,23,77",,4,4,True
+v370,"Chicken Breast,Pineapple,Blueberries,Honeydew","119,43,23,77",,4,4,True
+v371,"Chicken Breast,Pineapple,Blueberries,Honeydew","119,30,23,77",,4,4,True
+v372,"Chicken Breast,Pineapple,Blueberries,Honeydew","119,30,23,77",,4,4,True
+v373,"Chicken Breast,Pineapple,Blueberries,Honeydew","119,30,13,77",,4,4,True
+v374,"Chicken Breast,Pineapple,Blueberries,Honeydew","119,30,13,77",,4,4,True
+v375,"Chicken Breast,Cantaloupe","119,44",,2,2,True
+v376,"Chicken Breast,Cantaloupe","119,44",,2,2,True
+v377,"Chicken Breast,Cantaloupe","119,44",,2,2,True
+v378,"Chicken Breast,Cantaloupe","119,44",,2,2,True
+v379,"Chicken Breast,Cantaloupe","119,52",,2,2,True
+v380,"Chicken Breast,Cantaloupe","119,52",,2,2,True
+v381,"Chicken Breast,Cantaloupe","119,52",,2,2,True
+v382,"Chicken Breast,Cantaloupe","119,52",,2,2,True
+v383,"Chicken Breast,Cantaloupe","119,52",,2,2,True
+v384,"Chicken Breast,Cantaloupe","119,69",,2,2,True
+v385,"Chicken Breast,Cantaloupe","119,69",,2,2,True
+v386,"Chicken Breast,Cantaloupe","119,69",,2,2,True
+v387,"Chicken Breast,Cantaloupe","119,69",,2,2,True
+v388,"Chicken Breast,Cantaloupe","119,69",,2,2,True
+v389,"Chicken Breast,Cantaloupe,Pineapple","119,69,43",,3,3,True
+v390,"Chicken Breast,Cantaloupe,Pineapple","119,69,43",,3,3,True
+v391,"Chicken Breast,Cantaloupe,Pineapple","119,69,43",,3,3,True
+v392,"Chicken Breast,Cantaloupe,Pineapple,Blueberries","119,69,43,13",,4,4,True
+v393,"Chicken Breast,Cantaloupe,Pineapple,Blueberries","119,69,43,13",,4,4,True
+v394,"Chicken Breast,Cantaloupe,Pineapple,Blueberries","119,69,43,13",,4,4,True
+v395,"Chicken Breast,Cantaloupe,Pineapple,Blueberries,Honeydew","119,69,43,13,41",,5,5,True
+v396,"Chicken Breast,Cantaloupe,Pineapple,Blueberries,Egg","119,69,43,13,55",,5,5,True
+v397,"Chicken Breast,Cantaloupe,Pineapple,Blueberries,Egg","119,69,43,13,55",,5,5,True
+v398,"Chicken Breast,Cantaloupe,Pineapple,Blueberries,Egg","119,69,43,13,55",,5,5,True
+v399,"Chicken Breast,Cantaloupe,Pineapple,Blueberries,Egg","119,69,43,13,55",,5,5,True
+v400,"Chicken Breast,Cantaloupe,Pineapple,Blueberries,Egg","119,69,43,13,55",,5,5,True
+v401,"Chicken Breast,Cantaloupe,Pineapple,Blueberries,Egg,Honeydew","119,69,43,13,55,41",,6,6,True
+v402,"Chicken Breast,Cantaloupe,Pineapple,Blueberries,Egg,Honeydew","119,69,43,13,55,41",,6,6,True
+v403,"Chicken Breast,Cantaloupe,Pineapple,Blueberries,Egg,Honeydew","119,69,43,13,55,41",,6,6,True
+v404,"Chicken Breast,Cantaloupe,Pineapple,Blueberries,Egg,Honeydew","119,69,43,13,55,41",,6,6,True
+v405,"Chicken Breast,Cantaloupe,Pineapple,Blueberries,Egg,Honeydew","119,69,43,13,55,41",,6,6,True
+v406,"Chicken Breast,Cantaloupe,Pineapple,Blueberries,Egg,Honeydew","119,69,43,13,55,41",,6,6,True
+v407,"Chicken Breast,Cantaloupe,Pineapple,Blueberries,Egg,Honeydew","119,69,43,23,55,41",,6,6,True
+v408,"Chicken Breast,Cantaloupe,Pineapple,Blueberries,Egg,Honeydew","119,69,43,23,55,41",,6,6,True
+v409,"Chicken Breast,Cantaloupe,Pineapple,Blueberries,Egg,Honeydew, Strawberries","119,69,43,23,55,41,36",,7,7,True
+v410,Egg,55,,1,1,True
+v411,Egg,55,,1,1,True
+v412,Egg,55,,1,1,True
+v413,Egg,55,,1,1,True
+v414,Egg,55,,1,1,True
+v415,Egg,55,,1,1,True
+v416,Egg,55,,1,1,True
+v417,Egg,55,,1,1,True
+v418,Egg,55,,1,1,True
+v419,Egg,55,,1,1,True
+v420,Egg,55,,1,1,True
+v421,"Egg,Cantaloupe","55,44",,2,2,True
+v422,"Egg,Cantaloupe","55,44",,2,2,True
+v423,"Egg,Cantaloupe","55,52",,2,2,True
+v424,"Egg,Cantaloupe","55,69",,2,2,True
+v425,"Egg,Cantaloupe","55,69",,2,2,True
+v426,"Egg,Cantaloupe,Pineapple","55,69,30",,3,3,True
+v427,"Egg,Cantaloupe,Pineapple","55,69,30",,3,3,True
+v428,"Egg,Cantaloupe,Pineapple","55,69,43",,3,3,True
+v429,"Egg,Cantaloupe,Pineapple","55,69,30",,3,3,True
+v430,"Egg,Cantaloupe,Pineapple","55,69,30",,3,3,True
+v431,"Egg,Cantaloupe,Pineapple","55,69,30",,3,3,True
+v432,"Egg,Cantaloupe,Pineapple","55,69,30",,3,3,True
+v433,"Egg,Cantaloupe,Pineapple","55,69,30",,3,3,True
+v434,"Egg,Cantaloupe,Pineapple","55,69,30",,3,3,True
+v435,"Egg,Cantaloupe,Pineapple,Strawberries","55,69,30,36",,4,4,True
+v436,Cantaloupe,44,,1,1,True
+v437,Cantaloupe,44,,1,1,True
+v438,Cantaloupe,44,,1,1,True
+v439,Cantaloupe,44,,1,1,True
+v440,Cantaloupe,44,,1,1,True
+v441,Cantaloupe,44,,1,1,True
+v442,Cantaloupe,44,,1,1,True
+v443,Cantaloupe,44,,1,1,True
+v444,Cantaloupe,52,,1,1,True
+v445,Cantaloupe,52,,1,1,True
+v446,Cantaloupe,52,,1,1,True
+v447,Cantaloupe,52,,1,1,True
+v448,Cantaloupe,52,,1,1,True
+v449,Cantaloupe,52,,1,1,True
+v450,Cantaloupe,52,,1,1,True
+v451,Cantaloupe,52,,1,1,True
+v452,Cantaloupe,52,,1,1,True
+v453,Cantaloupe,52,,1,1,True
+v454,Cantaloupe,69,,1,1,True
+v455,Cantaloupe,69,,1,1,True
+v456,"Cantaloupe,Honeydew","69,41",,2,2,True
+v457,"Cantaloupe,Honeydew","69,41",,2,2,True
+v458,"Cantaloupe,Honeydew","69,77",,2,2,True
+v459,Honeydew,77,,1,1,True
+v460,Honeydew,77,,1,1,True
+v461,Honeydew,77,,1,1,True
+v462,Honeydew,77,,1,1,True
+v463,Honeydew,77,,1,1,True
+v464,Honeydew,77,,1,1,True
+v465,Honeydew,77,,1,1,True
+v466,Honeydew,77,,1,1,True
+v467,Honeydew,77,,1,1,True
+e172,Mushrooms,10,,1,1,True
+e173,Mushrooms,10,,1,1,True
+e174,Mushrooms,10,,1,1,True
+e175,Mushrooms,18,,1,1,True
+e176,Mushrooms,18,,1,1,True
+e177,Mushrooms,18,,1,1,True
+e178,Mushrooms,24,,1,1,True
+e179,Mushrooms,24,,1,1,True
+e180,Mushrooms,34,,1,1,True
+e181,Mushrooms,34,,1,1,True
+e182,Raisins,10,,1,1,True
+e183,Raisins,10,,1,1,True
+e184,Raisins,31,,1,1,True
+e185,Raisins,31,,1,1,True
+e186,Raisins,44,,1,1,True
+e187,Raisins,44,,1,1,True
+e188,"Mushrooms,Raisins","9,44",,2,2,True
+e189,"Mushrooms,Raisins","9,44",,2,2,True
+e190,"Mushrooms,Raisins","20,20",,2,2,True
+e191,"Mushrooms,Raisins","20,20",,2,2,True
+e192,"Mushrooms,Raisins","20,20",,2,2,True
+e193,Jujube,8,,1,1,True
+e194,Jujube,8,,1,1,True
+e195,Jujube,8,,1,1,True
+e196,Jujube,8,,1,1,True
+e197,Jujube,11,,1,1,True
+e198,Jujube,11,,1,1,True
+e199,Jujube,11,,1,1,True
+e200,Jujube,11,,1,1,True
+e201,Jujube,7,,1,1,True
+e202,Jujube,7,,1,1,True
+e203,Jujube,7,,1,1,True
+e204,Jujube,7,,1,1,True
+e205,Jujube,10,,1,1,True
+e206,Jujube,10,,1,1,True
+e207,Jujube,10,,1,1,True
+e208,Jujube,10,,1,1,True
+e209,Jujube,17,,1,1,True
+e210,Jujube,17,,1,1,True
+e211,Jujube,17,,1,1,True
+e212,Jujube,17,,1,1,True
+e213,Garlic,12,,1,1,True
+e214,Garlic,12,,1,1,True
+e215,Garlic,12,,1,1,True
+e216,Garlic,21,,1,1,True
+e217,Garlic,21,,1,1,True
+e218,Garlic,21,,1,1,True
+e219,Garlic,21,,1,1,True
+e220,Garlic,15,,1,1,True
+e221,Garlic,15,,1,1,True
+e222,Garlic,15,,1,1,True
+e223,Garlic,15,,1,1,True
+e224,Garlic,9,,1,1,True
+e225,Garlic,9,,1,1,True
+e226,Garlic,9,,1,1,True
+e227,Garlic,9,,1,1,True
+e228,Cauliflower,14,,1,1,True
+e229,Cauliflower,14,,1,1,True
+e230,Cauliflower,14,,1,1,True
+e231,Cauliflower,14,,1,1,True
+e232,Cauliflower,31,,1,1,True
+e233,Cauliflower,31,,1,1,True
+e234,Cauliflower,31,,1,1,True
+e235,Cauliflower,31,,1,1,True
+e236,Cauliflower,5,,1,1,True
+e237,Cauliflower,5,,1,1,True
+e238,Cauliflower,7,,1,1,True
+e239,Cauliflower,7,,1,1,True
+e240,Cauliflower,6,,1,1,True
+e241,Cauliflower,6,,1,1,True
+e242,Cauliflower,12,,1,1,True
+e243,Cauliflower,12,,1,1,True
+e244,Cauliflower,12,,1,1,True
+e245,Cauliflower,11,,1,1,True
+e246,Cauliflower,11,,1,1,True
+e247,Cauliflower,11,,1,1,True
+e248,Broccoli,5,,1,1,True
+e249,Broccoli,5,,1,1,True
+e250,Broccoli,7,,1,1,True
+e251,Broccoli,7,,1,1,True
+e252,Broccoli,6,,1,1,True
+e253,Broccoli,6,,1,1,True
+e254,Broccoli,10,,1,1,True
+e255,Broccoli,10,,1,1,True
+e256,Broccoli,16,,1,1,True
+e257,Broccoli,16,,1,1,True
+e258,Raisins,11,,1,1,True
+e259,Raisins,11,,1,1,True
+e260,Raisins,11,,1,1,True
+e261,Raisins,11,,1,1,True
+e262,Raisins,4,,1,1,True
+e263,Raisins,4,,1,1,True
+e264,Raisins,4,,1,1,True
+e265,Raisins,4,,1,1,True
+e266,Raisins,15,,1,1,True
+e267,Raisins,15,,1,1,True
+e268,Raisins,15,,1,1,True
+e269,Raisins,15,,1,1,True
+e270,Raisins,20,,1,1,True
+e271,Raisins,20,,1,1,True
+e272,Raisins,20,,1,1,True
+e273,Raisins,20,,1,1,True
+e274,Raisins,25,,1,1,True
+e275,Raisins,25,,1,1,True
+e276,Raisins,25,,1,1,True
+e277,Raisins,25,,1,1,True
+e278,Raisins,30,,1,1,True
+e279,Raisins,30,,1,1,True
+e280,Raisins,30,,1,1,True
+e281,Raisins,30,,1,1,True
+e282,Raisins,40,,1,1,True
+e283,Raisins,40,,1,1,True
+e284,Raisins,40,,1,1,True
+e285,Raisins,40,,1,1,True
+e286,Raisins,50,,1,1,True
+e287,Raisins,50,,1,1,True
+e288,Raisins,50,,1,1,True
+e289,Raisins,50,,1,1,True
+e290,Raisins,60,,1,1,True
+e291,Raisins,60,,1,1,True
+e292,Raisins,60,,1,1,True
+e293,Raisins,60,,1,1,True
+e294,Raisins,70,,1,1,True
+e295,Raisins,70,,1,1,True
+e296,Raisins,70,,1,1,True
+e297,Raisins,70,,1,1,True
+e298,Raisins,80,,1,1,True
+e299,Raisins,80,,1,1,True
+e300,Raisins,80,,1,1,True
+e301,Raisins,80,,1,1,True
+e302,Mushrooms,19,,1,1,True
+e303,Mushrooms,19,,1,1,True
+e304,Mushrooms,19,,1,1,True
+e305,Mushrooms,19,,1,1,True
+e306,Mushrooms,16,,1,1,True
+e307,Mushrooms,16,,1,1,True
+e308,Mushrooms,16,,1,1,True
+e309,Mushrooms,16,,1,1,True
+e310,Mushrooms,9,,1,1,True
+e311,Mushrooms,9,,1,1,True
+e312,Mushrooms,9,,1,1,True
+e313,Mushrooms,9,,1,1,True
+e314,Mushrooms,15,,1,1,True
+e315,Mushrooms,15,,1,1,True
+e316,Mushrooms,15,,1,1,True
+e317,Mushrooms,15,,1,1,True
+e318,Mushrooms,24,,1,1,True
+e319,Mushrooms,24,,1,1,True
+e320,Mushrooms,24,,1,1,True
+e321,Mushrooms,24,,1,1,True
+e322,Mushrooms,21,,1,1,True
+e323,Mushrooms,21,,1,1,True
+e324,Mushrooms,21,,1,1,True
+e325,Mushrooms,21,,1,1,True
+e326,Mushrooms,39,,1,1,True
+e327,Mushrooms,39,,1,1,True
+e328,Mushrooms,39,,1,1,True
+e329,Mushrooms,39,,1,1,True
+e330,Mushrooms,32,,1,1,True
+e331,Mushrooms,32,,1,1,True
+e332,Mushrooms,32,,1,1,True
+e333,Mushrooms,32,,1,1,True
+e334,Mushrooms,22,,1,1,True
+e335,Mushrooms,22,,1,1,True
+e336,Mushrooms,22,,1,1,True
+e337,Mushrooms,22,,1,1,True
+e338,Mushrooms,33,,1,1,True
+e339,Mushrooms,33,,1,1,True
+e340,Mushrooms,33,,1,1,True
+e341,Mushrooms,33,,1,1,True
+e342,Mushrooms,34,,1,1,True
+e343,Mushrooms,34,,1,1,True
+e344,Mushrooms,34,,1,1,True
+e345,Mushrooms,34,,1,1,True
+e346,"Cauliflower,Broccoli","12,8",,2,2,True
+e347,"Cauliflower,Broccoli","12,8",,2,2,True
+e348,"Cauliflower,Broccoli","12,11",,2,2,True
+e349,"Cauliflower,Broccoli","12,11",,2,2,True
+e350,"Cauliflower,Broccoli","25,11",,2,2,True
+e351,"Cauliflower,Broccoli","25,11",,2,2,True
+e352,"Cauliflower,Broccoli","25,18",,2,2,True
+e353,"Cauliflower,Broccoli","25,18",,2,2,True
+e354,"Cauliflower,Broccoli","25,18",,2,2,True
+e355,"Cauliflower,Broccoli","25,18",,2,2,True
+e356,"Cauliflower,Broccoli","8,18",,2,2,True
+e357,"Cauliflower,Broccoli","8,18",,2,2,True
+e358,"Cauliflower,Broccoli","24,22",,2,2,True
+e359,"Cauliflower,Broccoli","24,22",,2,2,True
+e360,"Cauliflower,Broccoli","24,22",,2,2,True
+e361,"Cauliflower,Broccoli","24,22",,2,2,True
+e362,"Cauliflower,Mushrooms","25,21",,2,2,True
+e363,"Cauliflower,Mushrooms","25,21",,2,2,True
+e364,"Cauliflower,Mushrooms","25,37",,2,2,True
+e365,"Cauliflower,Mushrooms","25,37",,2,2,True
+e366,"Cauliflower,Mushrooms","12,15",,2,2,True
+e367,"Cauliflower,Mushrooms","12,15",,2,2,True
+e368,"Cauliflower,Mushrooms","12,15",,2,2,True
+e369,"Cauliflower,Mushrooms","12,15",,2,2,True
+e370,"Cauliflower,Mushrooms","18,24",,2,2,True
+e371,"Cauliflower,Mushrooms","18,24",,2,2,True
+e372,"Cauliflower,Mushrooms","18,24",,2,2,True
+e373,"Cauliflower,Mushrooms","18,24",,2,2,True
+e374,"Cauliflower,Mushrooms","14,11",,2,2,True
+e375,"Cauliflower,Mushrooms","14,11",,2,2,True
+e376,"Cauliflower,Mushrooms","14,11",,2,2,True
+e377,"Cauliflower,Mushrooms","14,11",,2,2,True
+e378,Jujube,11,,1,1,True
+e379,Jujube,11,,1,1,True
+e380,Jujube,11,,1,1,True
+e381,Jujube,11,,1,1,True
+e382,Jujube,11,,1,1,True
+e383,Jujube,7,,1,1,True
+e384,Jujube,7,,1,1,True
+e385,Jujube,7,,1,1,True
+e386,Jujube,7,,1,1,True
+e387,Jujube,7,,1,1,True
+e388,Jujube,14,,1,1,True
+e389,Jujube,14,,1,1,True
+e390,Jujube,14,,1,1,True
+e391,Jujube,14,,1,1,True
+e392,Jujube,14,,1,1,True
+e393,Jujube,15,,1,1,True
+e394,Jujube,15,,1,1,True
+e395,Jujube,15,,1,1,True
+e396,Jujube,15,,1,1,True
+e397,Jujube,15,,1,1,True
+e398,Jujube,17,,1,1,True
+e399,Jujube,17,,1,1,True
+e400,Jujube,17,,1,1,True
+e401,Jujube,17,,1,1,True
+e402,Jujube,17,,1,1,True
+e403,Jujube,6,,1,1,True
+e404,Jujube,6,,1,1,True
+e405,Jujube,6,,1,1,True
+e406,Jujube,6,,1,1,True
+e407,Jujube,6,,1,1,True
+e408,Jujube,8,,1,1,True
+e409,Jujube,8,,1,1,True
+e410,Jujube,8,,1,1,True
+e411,Jujube,8,,1,1,True
+e412,Jujube,8,,1,1,True
+e413,Jujube,10,,1,1,True
+e414,Jujube,10,,1,1,True
+e415,Jujube,10,,1,1,True
+e416,Jujube,10,,1,1,True
+e417,Jujube,10,,1,1,True
+e418,Garlic,11,,1,1,True
+e419,Garlic,11,,1,1,True
+e420,Garlic,11,,1,1,True
+e421,Garlic,6,,1,1,True
+e422,Garlic,6,,1,1,True
+e423,Garlic,6,,1,1,True
+e424,Garlic,7,,1,1,True
+e425,Garlic,7,,1,1,True
+e426,Garlic,7,,1,1,True
+e427,Garlic,10,,1,1,True
+e428,Garlic,10,,1,1,True
+e429,Garlic,10,,1,1,True
+e430,Garlic,13,,1,1,True
+e431,Garlic,13,,1,1,True
+e432,Garlic,13,,1,1,True
