@@ -20,7 +20,7 @@
             12.94,
             8.08,
             0.67,
-            10.06
+            12.42
         ]
     },
     {
@@ -83,7 +83,7 @@
             "23"
         ],
         "calorie": [
-            5.75
+            4.26
         ]
     },
     {
@@ -137,7 +137,7 @@
             "8"
         ],
         "calorie": [
-            5.03
+            6.21
         ]
     },
     {
@@ -167,7 +167,7 @@
         ],
         "calorie": [
             35.25,
-            5.75
+            4.26
         ]
     },
     {
@@ -230,7 +230,7 @@
             12.94,
             8.08,
             0.67,
-            5.75
+            4.26
         ]
     },
     {
@@ -253,7 +253,7 @@
             16.55,
             12.94,
             0.67,
-            10.06,
+            12.42,
             57.42
         ]
     },
@@ -270,7 +270,7 @@
             "41"
         ],
         "calorie": [
-            58.0,
+            165.71,
             56.0,
             28.24
         ]
@@ -288,7 +288,7 @@
             "41"
         ],
         "calorie": [
-            174.0,
+            165.71,
             56.0,
             28.24
         ]
@@ -314,12 +314,12 @@
             "80"
         ],
         "calorie": [
-            174.0,
+            165.71,
             56.0,
             28.24,
             11.61,
             32.54,
-            204.22,
+            204.23,
             28.8
         ]
     },
@@ -338,7 +338,7 @@
             "80"
         ],
         "calorie": [
-            174.0,
+            165.71,
             28.24,
             468.9,
             28.8
@@ -353,7 +353,7 @@
             "125"
         ],
         "calorie": [
-            204.22
+            204.23
         ]
     },
     {
@@ -365,7 +365,7 @@
             "58"
         ],
         "calorie": [
-            174.0
+            165.71
         ]
     },
     {
@@ -407,7 +407,7 @@
             264.68,
             11.61,
             28.8,
-            174.0
+            165.71
         ]
     },
     {
@@ -425,7 +425,7 @@
         "calorie": [
             264.68,
             6.45,
-            90.0
+            85.71
         ]
     },
     {
@@ -445,7 +445,7 @@
         "calorie": [
             264.68,
             6.45,
-            90.0,
+            85.71,
             32.54
         ]
     },
@@ -551,7 +551,7 @@
         "calorie": [
             56.0,
             11.92,
-            90.0
+            85.71
         ]
     },
     {
@@ -571,7 +571,7 @@
         "calorie": [
             56.0,
             11.92,
-            174.0,
+            165.71,
             11.61
         ]
     },
@@ -806,7 +806,7 @@
         ],
         "calorie": [
             26.11,
-            170.23
+            170.22
         ]
     },
     {
@@ -818,7 +818,7 @@
             "180"
         ],
         "calorie": [
-            102.14
+            102.13
         ]
     },
     {
@@ -906,6 +906,732 @@
         ],
         "calorie": [
             58.58
+        ]
+    },
+    {
+        "name": "v213",
+        "food type": [
+            "Blueberries"
+        ],
+        "portion": [
+            "8"
+        ],
+        "calorie": [
+            4.54
+        ]
+    },
+    {
+        "name": "v224",
+        "food type": [
+            "Blueberries"
+        ],
+        "portion": [
+            "23"
+        ],
+        "calorie": [
+            13.05
+        ]
+    },
+    {
+        "name": "v234",
+        "food type": [
+            "Blueberries",
+            "Strawberries"
+        ],
+        "portion": [
+            "23",
+            "36"
+        ],
+        "calorie": [
+            13.05,
+            11.61
+        ]
+    },
+    {
+        "name": "v243",
+        "food type": [
+            "Blueberries",
+            "Strawberries"
+        ],
+        "portion": [
+            "13",
+            "36"
+        ],
+        "calorie": [
+            7.38,
+            11.61
+        ]
+    },
+    {
+        "name": "v253",
+        "food type": [
+            "Pineapple"
+        ],
+        "portion": [
+            "30"
+        ],
+        "calorie": [
+            15.02
+        ]
+    },
+    {
+        "name": "v257",
+        "food type": [
+            "Pineapple"
+        ],
+        "portion": [
+            "30"
+        ],
+        "calorie": [
+            15.02
+        ]
+    },
+    {
+        "name": "v272",
+        "food type": [
+            "Pineapple"
+        ],
+        "portion": [
+            "74"
+        ],
+        "calorie": [
+            37.04
+        ]
+    },
+    {
+        "name": "v285",
+        "food type": [
+            "Pineapple",
+            "Strawberries"
+        ],
+        "portion": [
+            "74",
+            "36"
+        ],
+        "calorie": [
+            37.04,
+            11.61
+        ]
+    },
+    {
+        "name": "v292",
+        "food type": [
+            "Pineapple",
+            "Strawberries"
+        ],
+        "portion": [
+            "43",
+            "36"
+        ],
+        "calorie": [
+            21.52,
+            11.61
+        ]
+    },
+    {
+        "name": "v302",
+        "food type": [
+            "Pineapple",
+            "Strawberries"
+        ],
+        "portion": [
+            "30",
+            "36"
+        ],
+        "calorie": [
+            15.02,
+            11.61
+        ]
+    },
+    {
+        "name": "v308",
+        "food type": [
+            "Pineapple",
+            "Strawberries",
+            "Blueberries"
+        ],
+        "portion": [
+            "30",
+            "36",
+            "8"
+        ],
+        "calorie": [
+            15.02,
+            11.61,
+            4.54
+        ]
+    },
+    {
+        "name": "v323",
+        "food type": [
+            "Pineapple",
+            "Strawberries",
+            "Blueberries"
+        ],
+        "portion": [
+            "74",
+            "36",
+            "13"
+        ],
+        "calorie": [
+            37.04,
+            11.61,
+            7.38
+        ]
+    },
+    {
+        "name": "v335",
+        "food type": [
+            "Pineapple",
+            "Strawberries",
+            "Blueberries"
+        ],
+        "portion": [
+            "74",
+            "36",
+            "23"
+        ],
+        "calorie": [
+            37.04,
+            11.61,
+            13.05
+        ]
+    },
+    {
+        "name": "v336",
+        "food type": [
+            "Pineapple",
+            "Strawberries",
+            "Blueberries"
+        ],
+        "portion": [
+            "74",
+            "36",
+            "23"
+        ],
+        "calorie": [
+            37.04,
+            11.61,
+            13.05
+        ]
+    },
+    {
+        "name": "v346",
+        "food type": [
+            "Chicken Breast",
+            "Pineapple"
+        ],
+        "portion": [
+            "119",
+            "30"
+        ],
+        "calorie": [
+            194.42,
+            15.02
+        ]
+    },
+    {
+        "name": "v360",
+        "food type": [
+            "Chicken Breast",
+            "Pineapple",
+            "Blueberries",
+            "Honeydew"
+        ],
+        "portion": [
+            "119",
+            "74",
+            "23",
+            "41"
+        ],
+        "calorie": [
+            194.42,
+            37.04,
+            13.05,
+            14.76
+        ]
+    },
+    {
+        "name": "v366",
+        "food type": [
+            "Chicken Breast",
+            "Pineapple",
+            "Blueberries",
+            "Honeydew"
+        ],
+        "portion": [
+            "119",
+            "43",
+            "23",
+            "77"
+        ],
+        "calorie": [
+            194.42,
+            21.52,
+            13.05,
+            27.72
+        ]
+    },
+    {
+        "name": "v379",
+        "food type": [
+            "Chicken Breast",
+            "Cantaloupe"
+        ],
+        "portion": [
+            "119",
+            "52"
+        ],
+        "calorie": [
+            194.42,
+            17.33
+        ]
+    },
+    {
+        "name": "v394",
+        "food type": [
+            "Chicken Breast",
+            "Cantaloupe",
+            "Pineapple",
+            "Blueberries"
+        ],
+        "portion": [
+            "119",
+            "69",
+            "43",
+            "13"
+        ],
+        "calorie": [
+            194.42,
+            23.0,
+            21.52,
+            7.38
+        ]
+    },
+    {
+        "name": "v397",
+        "food type": [
+            "Chicken Breast",
+            "Cantaloupe",
+            "Pineapple",
+            "Blueberries",
+            "Egg"
+        ],
+        "portion": [
+            "119",
+            "69",
+            "43",
+            "13",
+            "55"
+        ],
+        "calorie": [
+            194.42,
+            23.0,
+            21.52,
+            7.38,
+            85.8
+        ]
+    },
+    {
+        "name": "v410",
+        "food type": [
+            "Egg"
+        ],
+        "portion": [
+            "55"
+        ],
+        "calorie": [
+            85.8
+        ]
+    },
+    {
+        "name": "v420",
+        "food type": [
+            "Egg"
+        ],
+        "portion": [
+            "55"
+        ],
+        "calorie": [
+            85.8
+        ]
+    },
+    {
+        "name": "v431",
+        "food type": [
+            "Egg",
+            "Cantaloupe",
+            "Pineapple"
+        ],
+        "portion": [
+            "55",
+            "69",
+            "30"
+        ],
+        "calorie": [
+            85.8,
+            23.0,
+            15.02
+        ]
+    },
+    {
+        "name": "v440",
+        "food type": [
+            "Cantaloupe"
+        ],
+        "portion": [
+            "44"
+        ],
+        "calorie": [
+            14.67
+        ]
+    },
+    {
+        "name": "v454",
+        "food type": [
+            "Cantaloupe"
+        ],
+        "portion": [
+            "69"
+        ],
+        "calorie": [
+            23.0
+        ]
+    },
+    {
+        "name": "v459",
+        "food type": [
+            "Honeydew"
+        ],
+        "portion": [
+            "77"
+        ],
+        "calorie": [
+            27.72
+        ]
+    },
+    {
+        "name": "e178",
+        "food type": [
+            "Mushrooms"
+        ],
+        "portion": [
+            "24"
+        ],
+        "calorie": [
+            4.44
+        ]
+    },
+    {
+        "name": "e181",
+        "food type": [
+            "Mushrooms"
+        ],
+        "portion": [
+            "34"
+        ],
+        "calorie": [
+            6.3
+        ]
+    },
+    {
+        "name": "e194",
+        "food type": [
+            "Jujube"
+        ],
+        "portion": [
+            "8"
+        ],
+        "calorie": [
+            6.21
+        ]
+    },
+    {
+        "name": "e200",
+        "food type": [
+            "Jujube"
+        ],
+        "portion": [
+            "11"
+        ],
+        "calorie": [
+            8.54
+        ]
+    },
+    {
+        "name": "e211",
+        "food type": [
+            "Jujube"
+        ],
+        "portion": [
+            "17"
+        ],
+        "calorie": [
+            13.19
+        ]
+    },
+    {
+        "name": "e220",
+        "food type": [
+            "Garlic"
+        ],
+        "portion": [
+            "15"
+        ],
+        "calorie": [
+            20.0
+        ]
+    },
+    {
+        "name": "e230",
+        "food type": [
+            "Cauliflower"
+        ],
+        "portion": [
+            "14"
+        ],
+        "calorie": [
+            3.23
+        ]
+    },
+    {
+        "name": "e246",
+        "food type": [
+            "Cauliflower"
+        ],
+        "portion": [
+            "11"
+        ],
+        "calorie": [
+            2.54
+        ]
+    },
+    {
+        "name": "e256",
+        "food type": [
+            "Broccoli"
+        ],
+        "portion": [
+            "16"
+        ],
+        "calorie": [
+            5.45
+        ]
+    },
+    {
+        "name": "e261",
+        "food type": [
+            "Raisins"
+        ],
+        "portion": [
+            "11"
+        ],
+        "calorie": [
+            32.92
+        ]
+    },
+    {
+        "name": "e277",
+        "food type": [
+            "Raisins"
+        ],
+        "portion": [
+            "25"
+        ],
+        "calorie": [
+            74.83
+        ]
+    },
+    {
+        "name": "e281",
+        "food type": [
+            "Raisins"
+        ],
+        "portion": [
+            "30"
+        ],
+        "calorie": [
+            89.79
+        ]
+    },
+    {
+        "name": "e293",
+        "food type": [
+            "Raisins"
+        ],
+        "portion": [
+            "60"
+        ],
+        "calorie": [
+            179.59
+        ]
+    },
+    {
+        "name": "e304",
+        "food type": [
+            "Mushrooms"
+        ],
+        "portion": [
+            "19"
+        ],
+        "calorie": [
+            3.52
+        ]
+    },
+    {
+        "name": "e311",
+        "food type": [
+            "Mushrooms"
+        ],
+        "portion": [
+            "9"
+        ],
+        "calorie": [
+            1.67
+        ]
+    },
+    {
+        "name": "e320",
+        "food type": [
+            "Mushrooms"
+        ],
+        "portion": [
+            "24"
+        ],
+        "calorie": [
+            4.44
+        ]
+    },
+    {
+        "name": "e332",
+        "food type": [
+            "Mushrooms"
+        ],
+        "portion": [
+            "32"
+        ],
+        "calorie": [
+            5.93
+        ]
+    },
+    {
+        "name": "e349",
+        "food type": [
+            "Cauliflower",
+            "Broccoli"
+        ],
+        "portion": [
+            "12",
+            "11"
+        ],
+        "calorie": [
+            2.77,
+            3.75
+        ]
+    },
+    {
+        "name": "e356",
+        "food type": [
+            "Cauliflower",
+            "Broccoli"
+        ],
+        "portion": [
+            "8",
+            "18"
+        ],
+        "calorie": [
+            1.85,
+            6.13
+        ]
+    },
+    {
+        "name": "e368",
+        "food type": [
+            "Cauliflower",
+            "Mushrooms"
+        ],
+        "portion": [
+            "12",
+            "15"
+        ],
+        "calorie": [
+            2.77,
+            2.78
+        ]
+    },
+    {
+        "name": "e375",
+        "food type": [
+            "Cauliflower",
+            "Mushrooms"
+        ],
+        "portion": [
+            "14",
+            "11"
+        ],
+        "calorie": [
+            3.23,
+            2.04
+        ]
+    },
+    {
+        "name": "e387",
+        "food type": [
+            "Jujube"
+        ],
+        "portion": [
+            "7"
+        ],
+        "calorie": [
+            5.43
+        ]
+    },
+    {
+        "name": "e398",
+        "food type": [
+            "Jujube"
+        ],
+        "portion": [
+            "17"
+        ],
+        "calorie": [
+            13.19
+        ]
+    },
+    {
+        "name": "e402",
+        "food type": [
+            "Jujube"
+        ],
+        "portion": [
+            "17"
+        ],
+        "calorie": [
+            13.19
+        ]
+    },
+    {
+        "name": "e413",
+        "food type": [
+            "Jujube"
+        ],
+        "portion": [
+            "10"
+        ],
+        "calorie": [
+            7.76
+        ]
+    },
+    {
+        "name": "e424",
+        "food type": [
+            "Garlic"
+        ],
+        "portion": [
+            "7"
+        ],
+        "calorie": [
+            9.33
         ]
     }
 ]
