@@ -74,7 +74,7 @@ val_loader = DataLoader(val_dataset, batch_size=BATCH_SIZE, shuffle=False)
 class FoodClassifier(nn.Module):
     def __init__(self, num_classes):
         super(FoodClassifier, self).__init__()
-        self.model = models.resnet18(pretrained=True)
+        self.model = models.resnet50(pretrained=True)
         self.model.fc = nn.Linear(self.model.fc.in_features, num_classes)  # Multi-label classification
 
     def forward(self, x):
