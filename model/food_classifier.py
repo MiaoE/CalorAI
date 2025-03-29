@@ -86,6 +86,13 @@ model = FoodClassifier(NUM_CLASSES).to(device)
 criterion = nn.BCEWithLogitsLoss()  # Multi-label loss
 optimizer = optim.Adam(model.parameters(), lr=0.001)
 
+# Loads saved data if it exists
+checkpoint_path = os.path.join(MODEL_PATH, "food_classifier.pth")
+if os.path.exists(checkpoint_path):
+    checkpoint_data = torch.load(checkpoint_path)
+    model.load_state_dict(checkpoint_data['model_state_dict'])
+    print(f"Loaded previous checkpoint saved in { checkpoint_path }")
+
 # Training Loop
 for epoch in range(EPOCHS):
     model.train()
@@ -110,5 +117,5 @@ checkpoint = {
     "num_classes": NUM_CLASSES  # Store number of classes to prevent mismatches
 }
 
-torch.save(checkpoint, os.path.join(MODEL_PATH, "food_classifier.pth"))
+torch.save(checkpoint, checkpoint_path)
 print(f"Model saved successfully with NUM_CLASSES = {NUM_CLASSES}!")

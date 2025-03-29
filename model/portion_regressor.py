@@ -2,12 +2,14 @@ import torch
 import torch.nn as nn
 import torch.optim as optim
 import torchvision.transforms as transforms
-from torchvision import models
+# from torchvision import models
+import timm
 from torch.utils.data import DataLoader, Dataset
 import os
 import json
 import numpy as np
 from PIL import Image
+from datetime import datetime
 
 # Define paths
 DATA_PATH = "data"
@@ -67,32 +69,43 @@ transform = transforms.Compose([
 class PortionRegressor(nn.Module):
     def __init__(self, num_classes):
         super(PortionRegressor, self).__init__()
-        self.backbone = models.resnet18(pretrained=True)
-        self.backbone.fc = nn.Identity()  # Remove ResNet FC layer, use features
+        self.backbone = timm.create_model('resnet34', pretrained=True, num_classes=16)  # models.resnet34(pretrained=True)
+        self.vector_embed = nn.Linear(num_classes, 16)
         
         # Fully connected layers for portion prediction
         self.fc = nn.Sequential(
-            nn.Linear(512 + num_classes, 128),  # Image features + food class vector
+            nn.Linear(32, 256),  # Image features + food class vector
             nn.ReLU(),
-            nn.Linear(128, 64),
+            nn.Linear(256, 32),
             nn.ReLU(),
-            nn.Linear(64, num_classes)  # Predict portion sizes for each food type
+            nn.Linear(32, NUM_CLASSES),  # Predict portion sizes for each food type
+            nn.ReLU()
         )
 
     def forward(self, img, food_vector):
         features = self.backbone(img)  # Extract image features
-        x = torch.cat((features, food_vector), dim=1)  # Concatenate with food category vector
+        food_vec_embedding = self.vector_embed(food_vector)
+        x = torch.cat((features, food_vec_embedding), dim=1)  # Concatenate with food category vector
         return self.fc(x)  # Predict portion sizes
 
 # Ensure the model definition is accessible when imported
 if __name__ == "__main__":
     # Training mode - This will NOT run when imported
-    print("Training portion regressor...")
-
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     model = PortionRegressor(NUM_CLASSES).to(device)
+
+    # Loads saved data if it exists
+    checkpoint_path = os.path.join(MODEL_PATH, "portion_regressor.pth")
+    if os.path.exists(checkpoint_path):
+        checkpoint_data = torch.load(checkpoint_path)
+        model.load_state_dict(checkpoint_data['model_state_dict'])
+        print(f"Loaded previous checkpoint saved in { checkpoint_path }")
+
     criterion = nn.MSELoss()
-    optimizer = optim.Adam(model.parameters(), lr=0.001)
+    optimizer = optim.Adam(model.parameters(), lr=0.0001)
+
+    print("Training portion regressor...")
+    start_time = datetime.now()
 
     # Load Datasets
     train_dataset = FoodPortionDataset(json_path=os.path.join(DATA_PATH, "train.json"), 
@@ -100,7 +113,7 @@ if __name__ == "__main__":
                                        transform=transform)
     train_loader = DataLoader(train_dataset, batch_size=32, shuffle=True)
 
-    EPOCHS = 100
+    EPOCHS = 10
 
     for epoch in range(EPOCHS):
         model.train()
@@ -125,5 +138,8 @@ if __name__ == "__main__":
         "num_classes": NUM_CLASSES  # Store number of classes
     }
 
-    torch.save(checkpoint, os.path.join(MODEL_PATH, "portion_regressor.pth"))
+    torch.save(checkpoint, checkpoint_path)
     print(f"Portion regressor model saved successfully with NUM_CLASSES = {NUM_CLASSES}!")
+
+    end_time = datetime.now()
+    print(f"Time Elapsed: { end_time - start_time }")
