@@ -90,3 +90,7 @@ We also benchmarked various image classification models on our custom dataset us
 
 ## Next Steps
 
+---
+
+## Guide to Codebase
+
