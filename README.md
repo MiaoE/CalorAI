@@ -22,6 +22,10 @@ We collected cell phone images in varied environments to simulate real-world usa
 
 Our dataset contains 1093 labeled images across multiple food types.  
 
+### Data Pre-processing
+
+Images were resized to 400×400 pixels, converted to tensors, and normalized. Labels were converted to multi-label one-hot encodings. Each image is associated with the presence of specific food items, enabling multi-label classification and calorie estimation.
+
 ### Dataset Split by Food Category
 
 | Food Category    | Total | Train | Validation | Test |
@@ -54,10 +58,19 @@ Our dataset contains 1093 labeled images across multiple food types.
 | Onion            | 14    | 11    | 2          | 1    |
 | **Total**        | 2432  | 1949  | 270        | 213  |
 
+### Dataset Split by Number of Food Types
 
-### Data Pre-processing
-
-Images were resized to 400×400 pixels, converted to tensors, and normalized. Labels were converted to multi-label one-hot encodings. Each image is associated with the presence of specific food items, enabling multi-label classification and calorie estimation.
+| Number of Food Types | Total | Train | Validation | Test |
+|----------------------|-------|-------|------------|------|
+| 1                    | 587   | 467   | 56         | 64   |
+| 2                    | 212   | 172   | 21         | 19   |
+| 3                    | 147   | 120   | 16         | 11   |
+| 4                    | 82    | 63    | 10         | 9    |
+| 5                    | 35    | 26    | 5          | 4    |
+| 6                    | 24    | 22    | 0          | 2    |
+| 7                    | 5     | 4     | 1          | 0    |
+| 8                    | 1     | 1     | 0          | 0    |
+| **Total**            | 1093  | 895   | 109        | 109  |
 
 ---
 
