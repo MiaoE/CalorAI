@@ -32,6 +32,7 @@ Given an input food image $U_i$, the model identifies the food items $F_i = (f_1
 
 ### Model Architecture
 
+![Model Architecture](items/model.png)
 
 The model has three core components:
 
