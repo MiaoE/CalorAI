@@ -1,4 +1,6 @@
-# CalorAI
+# CalorAI: The AI Calorie Estimator
+
+![Logo](items/logo_light.png)
 
 ## Introduction
 
