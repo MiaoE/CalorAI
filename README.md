@@ -18,6 +18,8 @@ Although many datasets map food images to categories and categories to calories,
 
 We collected cell phone images in varied environments to simulate real-world usage. Images were taken on 10-inch plates with good contrast from the background and consistent framing (1:1 ratio). Each food item was weighed using a kitchen scale, and total calories were computed using a calorie-per-gram dataset. To ensure variety, food was photographed in different orientations, quantities, and combinations.
 
+![Sample Data](items/example_data.png)
+
 Our dataset contains 1093 labeled images across multiple food types.  
 
 ### Data Pre-processing
