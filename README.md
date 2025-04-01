@@ -60,16 +60,15 @@ Images were resized to 400×400 pixels, converted to tensors, and normalized. La
 
 ### Dataset Split by Number of Food Types
 
+### Image Count by Number of Food Types (5+ Combined)
+
 | Number of Food Types | Total | Train | Validation | Test |
 |----------------------|-------|-------|------------|------|
 | 1                    | 587   | 467   | 56         | 64   |
 | 2                    | 212   | 172   | 21         | 19   |
 | 3                    | 147   | 120   | 16         | 11   |
 | 4                    | 82    | 63    | 10         | 9    |
-| 5                    | 35    | 26    | 5          | 4    |
-| 6                    | 24    | 22    | 0          | 2    |
-| 7                    | 5     | 4     | 1          | 0    |
-| 8                    | 1     | 1     | 0          | 0    |
+| 5+                   | 65    | 53    | 6          | 6    |
 | **Total**            | 1093  | 895   | 109        | 109  |
 
 ---
