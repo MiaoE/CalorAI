@@ -22,6 +22,39 @@ We collected cell phone images in varied environments to simulate real-world usa
 
 Our dataset contains 1093 labeled images across multiple food types.  
 
+### Dataset Split by Food Category
+
+| Food Category    | Total | Train | Validation | Test |
+|------------------|-------|-------|------------|------|
+| Pineapple        | 188   | 151   | 18         | 19   |
+| Blueberries      | 182   | 146   | 20         | 16   |
+| Strawberries     | 166   | 135   | 16         | 15   |
+| Chicken Breast   | 159   | 129   | 15         | 15   |
+| Cantaloupe       | 156   | 126   | 16         | 14   |
+| Egg              | 102   | 84    | 9          | 9    |
+| Bread            | 98    | 77    | 10         | 11   |
+| Grapes           | 93    | 74    | 10         | 9    |
+| Cherry Tomato    | 91    | 75    | 8          | 8    |
+| Mushrooms        | 90    | 71    | 11         | 8    |
+| Jujube           | 86    | 65    | 10         | 11   |
+| Broccoli         | 83    | 70    | 8          | 5    |
+| Honeydew         | 81    | 64    | 9          | 8    |
+| Cauliflower      | 80    | 65    | 10         | 5    |
+| Raisins          | 75    | 61    | 6          | 8    |
+| Sweet Potato     | 65    | 52    | 7          | 6    |
+| Garlic           | 64    | 51    | 5          | 8    |
+| Apple            | 51    | 39    | 7          | 5    |
+| Carrot           | 50    | 40    | 5          | 5    |
+| Clementine       | 41    | 31    | 5          | 5    |
+| Pear             | 33    | 27    | 2          | 4    |
+| Chives           | 30    | 23    | 4          | 3    |
+| Orange           | 23    | 20    | 2          | 1    |
+| Banana           | 21    | 16    | 3          | 2    |
+| Potato           | 20    | 18    | 0          | 2    |
+| Onion            | 14    | 11    | 2          | 1    |
+| **Total**        | 2432  | 1949  | 270        | 213  |
+
+
 ### Data Pre-processing
 
 Images were resized to 400×400 pixels, converted to tensors, and normalized. Labels were converted to multi-label one-hot encodings. Each image is associated with the presence of specific food items, enabling multi-label classification and calorie estimation.
