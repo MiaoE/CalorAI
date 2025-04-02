@@ -28,35 +28,36 @@ Images were resized to 400×400 pixels, converted to tensors, and normalized. La
 
 ### Dataset Split by Food Category
 
-| Food Category    | Total | Train | Validation | Test |
-|------------------|-------|-------|------------|------|
-| Pineapple        | 188   | 151   | 18         | 19   |
-| Blueberries      | 182   | 146   | 20         | 16   |
-| Strawberries     | 166   | 135   | 16         | 15   |
-| Chicken Breast   | 159   | 129   | 15         | 15   |
-| Cantaloupe       | 156   | 126   | 16         | 14   |
-| Egg              | 102   | 84    | 9          | 9    |
-| Bread            | 98    | 77    | 10         | 11   |
-| Grapes           | 93    | 74    | 10         | 9    |
-| Cherry Tomato    | 91    | 75    | 8          | 8    |
-| Mushrooms        | 90    | 71    | 11         | 8    |
-| Jujube           | 86    | 65    | 10         | 11   |
-| Broccoli         | 83    | 70    | 8          | 5    |
-| Honeydew         | 81    | 64    | 9          | 8    |
-| Cauliflower      | 80    | 65    | 10         | 5    |
-| Raisins          | 75    | 61    | 6          | 8    |
-| Sweet Potato     | 65    | 52    | 7          | 6    |
-| Garlic           | 64    | 51    | 5          | 8    |
-| Apple            | 51    | 39    | 7          | 5    |
-| Carrot           | 50    | 40    | 5          | 5    |
-| Clementine       | 41    | 31    | 5          | 5    |
-| Pear             | 33    | 27    | 2          | 4    |
-| Chives           | 30    | 23    | 4          | 3    |
-| Orange           | 23    | 20    | 2          | 1    |
-| Banana           | 21    | 16    | 3          | 2    |
-| Potato           | 20    | 18    | 0          | 2    |
-| Onion            | 14    | 11    | 2          | 1    |
-| **Total**        | 2432  | 1949  | 270        | 213  |
+| Food Category    | Total | Train       | Validation  | Test       |
+|------------------|-------|-------------|-------------|------------|
+| Pineapple        | 188   | 151 (80%)   | 18 (10%)    | 19 (10%)   |
+| Blueberries      | 182   | 146 (80%)   | 20 (11%)    | 16 (9%)    |
+| Strawberries     | 166   | 135 (81%)   | 16 (10%)    | 15 (9%)    |
+| Chicken Breast   | 159   | 129 (81%)   | 15 (9%)     | 15 (9%)    |
+| Cantaloupe       | 156   | 126 (81%)   | 16 (10%)    | 14 (9%)    |
+| Egg              | 102   | 84 (82%)    | 9 (9%)      | 9 (9%)     |
+| Bread            | 98    | 77 (79%)    | 10 (10%)    | 11 (11%)   |
+| Grapes           | 93    | 74 (80%)    | 10 (11%)    | 9 (10%)    |
+| Cherry Tomato    | 91    | 75 (82%)    | 8 (9%)      | 8 (9%)     |
+| Mushrooms        | 90    | 71 (79%)    | 11 (12%)    | 8 (9%)     |
+| Jujube           | 86    | 65 (76%)    | 10 (12%)    | 11 (13%)   |
+| Broccoli         | 83    | 70 (84%)    | 8 (10%)     | 5 (6%)     |
+| Honeydew         | 81    | 64 (79%)    | 9 (11%)     | 8 (10%)    |
+| Cauliflower      | 80    | 65 (81%)    | 10 (13%)    | 5 (6%)     |
+| Raisins          | 75    | 61 (81%)    | 6 (8%)      | 8 (11%)    |
+| Sweet Potato     | 65    | 52 (80%)    | 7 (11%)     | 6 (9%)     |
+| Garlic           | 64    | 51 (80%)    | 5 (8%)      | 8 (13%)    |
+| Apple            | 51    | 39 (76%)    | 7 (14%)     | 5 (10%)    |
+| Carrot           | 50    | 40 (80%)    | 5 (10%)     | 5 (10%)    |
+| Clementine       | 41    | 31 (76%)    | 5 (12%)     | 5 (12%)    |
+| Pear             | 33    | 27 (82%)    | 2 (6%)      | 4 (12%)    |
+| Chives           | 30    | 23 (77%)    | 4 (13%)     | 3 (10%)    |
+| Orange           | 23    | 20 (87%)    | 2 (9%)      | 1 (4%)     |
+| Banana           | 21    | 16 (76%)    | 3 (14%)     | 2 (10%)    |
+| Potato           | 20    | 18 (90%)    | 0 (0%)      | 2 (10%)    |
+| Onion            | 14    | 11 (79%)    | 2 (14%)     | 1 (7%)     |
+| **Total**        | 2432  | 1949 (80%)  | 270 (11%)   | 213 (9%)   |
+
 
 ### Dataset Split by Number of Food Types
 
