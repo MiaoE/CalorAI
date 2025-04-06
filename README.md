@@ -6,7 +6,7 @@
 
 Obesity is a growing global health crisis, with over 38% of the population classified as overweight or obese, contributing to numerous chronic conditions. Accurate tracking of caloric intake is essential for promoting healthier eating habits, yet existing diet apps often rely on manual input, which can be tedious and error-prone.
 
-**CalorAI** aims to simplify this process using deep learning. By analyzing images of meals, CalorAI automatically classifies food items and estimates their calorie content. Our system uses a CNN-based pipeline to handle both food recognition and portion estimation. This project serves as a foundation for more advanced diet-tracking solutions and offers an open-source implementation for further research and real-world use.
+**CalorAI** aims to simplify this process using deep learning. By analyzing images of meals, CalorAI automatically classifies food items and estimates their calorie content. Our system uses a CNN-based pipeline to handle both food recognition and portion estimation. This project serves as a foundation for more advanced diet-tracking solutions and offers an open-source implementation for further research and real-world use. Such a concept could be a great starting point for people who are not sure how to build healthier eating habits. 
 
 ---
 
