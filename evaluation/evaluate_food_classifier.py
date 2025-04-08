@@ -110,3 +110,10 @@ F1 Score: 0.7815
 Hamming Loss: 0.0243
 Exact Match Ratio: 0.5439
 '''
+
+# Compute F1 score per class
+per_class_f1 = f1_score(all_labels, all_preds, average=None)
+
+print("\nPer-Class F1 Scores:")
+for i, score in enumerate(per_class_f1):
+    print(f"{FOOD_LABELS[i]:<15} : {score:.4f}")
