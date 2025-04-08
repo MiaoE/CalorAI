@@ -11,6 +11,7 @@ data_labels_csv = 'data_labels_raw.csv'
 data_labels_json = 'data.json'
 
 def get_calories_per_gram(serving, calories):
+        """Gets the unit calorie content given a total calorie content and its serving"""
         weight_match = re.search(r"(\d+)\s*g", serving)
         cal_match = re.search(r"(\d+)", str(calories))
         
@@ -21,6 +22,7 @@ def get_calories_per_gram(serving, calories):
         return None
 
 def parse_database_csv_to_json(database_csv, database_json):
+    """Converts the database CSV file to its designated JSON file specified by path"""
     df = pd.read_csv(database_csv)
     
     calories_per_gram_dict = {
@@ -38,10 +40,8 @@ def parse_database_csv_to_json(database_csv, database_json):
     return json_output
 
 
-# json_output = parse_database_csv_to_json(database_csv, database_json)
-# print(json_output)
-
 def get_total_calories(database_json, food, weight):
+    """Returns the calorie content of a specific food and its weight"""
     with open(database_json, "r") as f:
         calories_data = json.load(f)
     
@@ -54,6 +54,7 @@ def get_total_calories(database_json, food, weight):
 
 
 def csv_to_json(data_labels_csv, data_labels_json, database_json):
+    """Converts the custom data CSV file to a JSON file specified by path"""
     data = []
 
     # Read CSV and process data

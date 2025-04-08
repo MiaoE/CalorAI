@@ -1,11 +1,12 @@
+import os
+import json
+
 import torch
 import torch.nn as nn
 from torchvision import transforms, models
 from torch.utils.data import DataLoader, Dataset
 from sklearn.metrics import f1_score, hamming_loss
 import numpy as np
-import os
-import json
 from PIL import Image
 
 # Define constants
@@ -68,6 +69,7 @@ test_loader = DataLoader(test_dataset, batch_size=BATCH_SIZE, shuffle=False)
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 class FoodClassifier(nn.Module):
+    """CNN-based model for food ingredient classification"""
     def __init__(self, num_classes):
         super(FoodClassifier, self).__init__()
         self.model = models.resnet18(pretrained=True)
@@ -104,12 +106,6 @@ exact_match = np.mean(np.all(all_preds == all_labels, axis=1))  # Exact Match Ra
 print(f"F1 Score: {f1:.4f}")
 print(f"Hamming Loss: {hamming:.4f}")
 print(f"Exact Match Ratio: {exact_match:.4f}")
-
-'''
-F1 Score: 0.7815
-Hamming Loss: 0.0243
-Exact Match Ratio: 0.5439
-'''
 
 # Compute F1 score per class
 per_class_f1 = f1_score(all_labels, all_preds, average=None)

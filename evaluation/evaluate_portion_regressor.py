@@ -1,14 +1,20 @@
 import sys
 import os
+import json
+
 import torch
 import torch.nn as nn
 import torchvision.transforms as transforms
 from torch.utils.data import DataLoader, Dataset
-import json
 import numpy as np
 from PIL import Image
 from tqdm import tqdm  # Progress bar
 from sklearn.metrics import mean_absolute_error, mean_squared_error
+
+# Add 'model/' to Python's path for importing the PortionRegressor
+sys.path.append(os.path.abspath("model"))
+# Import PortionRegressor
+from model.portion_regressor import PortionRegressor
 
 # Define paths
 DATA_PATH = "data"
@@ -25,14 +31,9 @@ with open(CALORIE_DB_FILE, "r") as f:
 FOOD_LABELS = sorted(list(calorie_db.keys()))
 NUM_CLASSES = len(FOOD_LABELS)
 
-# Add 'model/' to Python's path for importing the PortionRegressor
-sys.path.append(os.path.abspath("model"))
-
-# Import PortionRegressor
-from portion_regressor import PortionRegressor
-
 # Define Dataset Class for Evaluation
 class FoodPortionDataset(Dataset):
+    """Custom dataset class used for portion regression"""
     def __init__(self, json_path, img_dir, transform=None):
         with open(json_path, "r") as f:
             self.data = json.load(f)

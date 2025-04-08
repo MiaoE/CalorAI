@@ -54,6 +54,10 @@ Onion: 14
 
 # Splitting the dataset 
 def split_dataset(json_file_path, train_json, val_json, test_json, train_ratio=0.7, val_ratio=0.15, test_ratio=0.15):
+    """
+        Splits the custom dataset by their specified ratios and saves the separate datasets to their designated paths.
+        Even though this function is not used initially, it can be utilized by further implementations and improvements.
+    """
 
     # read input dataset
     with open(json_file_path, mode='r', encoding='utf-8') as json_file:
@@ -117,6 +121,11 @@ def split_dataset(json_file_path, train_json, val_json, test_json, train_ratio=0
 
 
 def split_dataset2(json_file_path, train_json, val_json, test_json, train_ratio=0.8, val_ratio=0.1, test_ratio=0.1):
+    """
+        Splits the custom dataset by the first eight going to training, next one goes to validation, and next one goes to 
+        test, and repeat. Lastly saves the separate datasets to their designated paths.
+    """
+    
     with open(json_file_path, mode='r', encoding='utf-8') as json_file:
         data = json.load(json_file)
 
@@ -149,4 +158,5 @@ def split_dataset2(json_file_path, train_json, val_json, test_json, train_ratio=
     print(f"Data split complete. Saved to:\n- {train_json}\n- {val_json}\n- {test_json}")
     print(f"Train: {len(train_data)}, Validation: {len(val_data)}, Test: {len(test_data)}")
 
+# Using the second split function due to limited custom data
 split_dataset2("data.json", "train.json", "val.json", "test.json")

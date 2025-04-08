@@ -1,10 +1,11 @@
+import os
+import json
+
 import torch
 import torch.nn as nn
 import torch.optim as optim
 from torchvision import transforms, models
 from torch.utils.data import DataLoader, Dataset
-import os
-import json
 from PIL import Image
 
 # Define constants
@@ -27,6 +28,7 @@ NUM_CLASSES = len(FOOD_LABELS)  # Auto-detect number of classes
 
 # Define Custom Dataset
 class FoodDataset(Dataset):
+    """Custom dataset that iterates over the custom data"""
     def __init__(self, json_path, img_dir, transform=None):
         with open(json_path, "r") as f:
             self.data = json.load(f)
@@ -72,6 +74,7 @@ val_loader = DataLoader(val_dataset, batch_size=BATCH_SIZE, shuffle=False)
 
 # Define Model
 class FoodClassifier(nn.Module):
+    """CNN-based food ingredients classification model"""
     def __init__(self, num_classes):
         super(FoodClassifier, self).__init__()
         self.model = models.resnet50(pretrained=True)

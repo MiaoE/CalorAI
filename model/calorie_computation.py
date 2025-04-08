@@ -1,8 +1,9 @@
+import json
+import os
+
 import torch
 import torchvision.transforms as transforms
 from PIL import Image
-import json
-import os
 
 # Define paths
 DATA_PATH = "data"
@@ -31,6 +32,7 @@ portion_regressor = torch.load(PORTION_REGRESSOR_MODEL, map_location=torch.devic
 portion_regressor.eval()
 
 def predict_calories(image_path):
+    """Returns the predicted total portion and calorie content given an image"""
     image = Image.open(image_path).convert("RGB")
     image = transform(image).unsqueeze(0)  # Add batch dimension
 

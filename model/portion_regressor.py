@@ -1,12 +1,12 @@
+import os
+import json
+
 import torch
 import torch.nn as nn
 import torch.optim as optim
 import torchvision.transforms as transforms
-# from torchvision import models
 import timm
 from torch.utils.data import DataLoader, Dataset
-import os
-import json
 import numpy as np
 from PIL import Image
 from datetime import datetime
@@ -29,6 +29,7 @@ NUM_CLASSES = len(FOOD_LABELS)
 
 # Define Dataset
 class FoodPortionDataset(Dataset):
+    """Custom dataset that iterates over the custom data"""
     def __init__(self, json_path, img_dir, transform=None):
         with open(json_path, "r") as f:
             self.data = json.load(f)
@@ -67,6 +68,7 @@ transform = transforms.Compose([
 
 # Define Portion Size Regressor Model
 class PortionRegressor(nn.Module):
+    """Regression model that uses the ResNet architecture and FC layers for regression"""
     def __init__(self, num_classes):
         super(PortionRegressor, self).__init__()
         self.backbone = timm.create_model('resnet34', pretrained=True, num_classes=16)  # models.resnet34(pretrained=True)
@@ -115,6 +117,7 @@ if __name__ == "__main__":
 
     EPOCHS = 10
 
+    # Training Loop
     for epoch in range(EPOCHS):
         model.train()
         running_loss = 0.0
